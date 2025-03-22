@@ -9,7 +9,7 @@
   - **example_data.zip** contains the examples of PDFs to JSON conversion
   - **RAG.py (In development: using IBM granite with Ollama to create local RAG models)**
  
-  - 
+    
 **General Workflow**
 ![image](https://github.com/user-attachments/assets/99370082-66ec-4c12-ade6-42b52101e4f0)
 
