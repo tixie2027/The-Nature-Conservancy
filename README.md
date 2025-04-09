@@ -7,7 +7,7 @@
   - **main.py** automate the whole process, and takes less than 1 minute to process one article
   - **json_heading_fix** converts the documents into a Introduction, Method, Results, Discussions, Tables, format. It standardizes the format of each article
   - **example_data.zip** contains the examples of PDFs to JSON conversion
-  - **RAG.py (In development: using IBM granite with Ollama to create local RAG models)**
+  - **RAG.py (In development: using IBM Ilama 3.1 with Ollama to create local RAG models)**
  
     
 **General Workflow**
