@@ -1,0 +1,293 @@
+{
+    "sections": [
+        {
+            "heading": null,
+            "content": [
+                "<!-- image -->",
+                "Contents lists available at ScienceDirect"
+            ]
+        },
+        {
+            "heading": "Agriculture, Ecosystems and Environment",
+            "content": [
+                "j o u r n a l homepage: www.elsevier.com/locate/agee"
+            ]
+        },
+        {
+            "heading": "Carbon stocks in selected tree plantations, as compared with semi-deciduous forests in centre-west Côte d Ivoire '",
+            "content": [
+                "Fulbert N Guessa N Gbala ' ' a, *, Arnauth Martinez Guéi , Jérôme Ebagnerin Tondoh a,c b",
+                "- a UFR des Sciences et de la Nature/Centre de Recherche en Ecologie, Université Nangui Abrogoua, 02 BP 801 Abidjan 02, Cote d Ivoire '",
+                "b",
+                "UFR d Agroforesterie/Centre de Recherche en Ecologie, Université Jean Lorougnon Guédé, BP 150 Daloa, Cote d Ivoire '",
+                "'",
+                "- c WASCAL Competence Center, 06 BP 9507 Ouagadougou 06, Burkina Faso"
+            ]
+        },
+        {
+            "heading": "A R T I C L E I N F O",
+            "content": []
+        },
+        {
+            "heading": "A B S T R A C T",
+            "content": [
+                "Article history: Received 17 June 2016",
+                "Received in revised form 27 December 2016",
+                "Accepted 10 January 2017",
+                "Available online 22 January 2017",
+                "Keywords: REDD + Above and belowground biomass Carbon stocks Tree plantations",
+                "Reducing emissions from deforestation and forest degradation (REDD ) is receiving increasing political + and scientific attention as a climate change mitigation approach. Agroforestry systems are credited for stocking significant amounts of carbon and hence have a potential to mitigate greenhouse gas emissions. Forestry-based carbon storage projects are currently being introduced in many tropical countries, but assessment of carbon storage is difficult due to a lack of species-level information.The research addressed in this paper assessed above, belowground and litter biomass of Theobroma cacao (cocoa) and Tectona grandi s(teak) plantations relative to secondary forests in two sites in mid-western Côte d'Ivoire. Allometric equations for tropical trees relating to diameter at breast height (DBH) were used to estimate carbon storage potential. The mainfindings reveal that teak plantations have an appreciably much greater mean carbon storage capacity than secondary forests and cocoa plantations. The aboveground biomass of teak stands contained the highest carbon stock (214.7 Mg C ha -1 ) while litter and root displayed 2.8 and 35.6 Mg C ha -1 , respectively. Cocoa plantations have the lowest carbon storage potential in the aboveground biomass,estimated at 18.6 Mg C ha -1 , but a considerable amount of carbon stored in the litter (4.7 Mg C ha -1 ). With teak plantations ' annual mean storage rate of 19.5 Mg C ha -1 year -1 , corresponding to 70.6 Mg CO2 ha -1 year -1 , the results demonstrate teak's potential of carbon sequestration and mitigation of the greenhouse gas emission effect.",
+                "© 2017 Elsevier B.V. All rights reserved."
+            ]
+        },
+        {
+            "heading": "1. Introduction",
+            "content": [
+                "Like all tropical countries whose economy relies on the exploitation of natural resources, Côte d Ivoire may face serious ' deforestation and forest degradation leading to biodiversity lost and soil quality deterioration (Tondoh et al., 2015). Indeed, several studies (Dao,1999; Brou et al., 2005; Tondoh et al., 2015) show that for decades, deforestation in Côte d Ivoire has reached an alarming ' rate; about 4/5 of the country s forests have been disappearing at a ' rate of 7.6% per year over the last three decades (Balac, 1999). One of the root causes of deforestation is the development of cash tree crop plantations, such as cocoa ( Theobroma cacao , Sterculiaceae) and coffee ( Coffea arabusta and Coffea canephora , Rubiaceae). Such plantations have led to the degradation of 83% of the forests, with remaining forests in 1996 estimated at 2.5 million left of 15 million hectares in the early 1960 s (Ruf, 1997; Lanly, 1982; Païvinen et al., 0",
+                "1992). On the other hand, Côte d Ivoire has been the world s top ' ' cocoa producer for the last 50 years, with a 40% share of the global market, followed by Ghana, Nigeria and Cameroon (Gockowski and Sonwa, 2011; Hartemink, 2005). The increase of area under cocoa plantation has been at the expense of Guinea rain forest cover, with over 2.3 million ha of deforestation and forest degradation associated with this widespread land-use system (Gockowski and Sonwa, 2011).",
+                "In order to counteract this trend of forest cover reduction and soil deterioration, and as part of its strategy for protecting biodiversity and promoting sustainable management of forests, the government recommended enriching spare lands spread throughout the country, called ' Forêts Classées , ' by planting native and exotic tree species (SODEFOR, 2002). Such a program was executed in the ' Forêt Classée de la Téné ' located in the central-western part of the country, Department of Oumé, where planting fast growing exotic species ( Tectona grandis , teak) along with local species such as Terminalia superba ; Terminalia ivorensis , Gmelina arborea , was carried out. Teak has highly valued, light but strong timber, with a natural resistance against termites and other",
+                "<!-- image -->",
+                "<!-- image -->",
+                "insects, and wood-degrading fungi (FAO, 2000; Bhat and Gnanaharan, 2007; Derwisch et al., 2009). Because of their high economic value, teak and cocoa were the most common cash tree crops planted by smallholder farmers in the study area with cocoa and teak stands covering the whole landscape at the expense of natural forest. In the current context of climate change, however, documenting such plantations ' contribution to environmental services such as carbon sequestration will provide useful information as to how much they might contribute to the country s REDD + ' program.",
+                "In addition to their contribution to improving smallholders ' livelihoods, the establishment of teak and cocoa plantations could be seen as a management strategy for storing quantities of carbon and thus mitigating climate change. In order to evaluate their potential contribution to reducing greenhouse gas emission, it is crucial to evaluate the baseline situation by assessing carbon stocks within both plantations using the most relevant scientific methods. The objectives of this study were to (i) determine the stocks and accumulation rates of carbon in teak and cocoa stands with reference to adjacent secondary forests, and (ii) estimate the distribution of carbon stocks in different pools (aboveground, litter, and roots). We hypothesized that the conversion of forest into cocoa and teak plantations would lead to a great variation in above and belowground carbon storage, and that teak plantations would be the best option to store carbon in the biomass and therefore mitigate CO2 emissions. Results of this study would help establish baseline data on carbon sequestration for cocoa and teak plantations, which might play a key role in REDD + strategy in Côte d Ivoire. '"
+            ]
+        },
+        {
+            "heading": "2. Materials and methods",
+            "content": []
+        },
+        {
+            "heading": "2.1. Study area",
+            "content": [
+                "The present study was carried out in a semi-deciduous forest area located in the Centre-West Region of Côte d Ivoire (6 30N ' /C14 latitude, 5 31W longitude). In the 1970s, this area, as part of the /C14 main cocoa production area, was characterized by a high rate of deforestation. As a result, the landscape is now composed of a mosaic of land-uses, including forests, old cocoa and teak plantations, and other native tree species which are part of the ' Forêt Classée de la Téné . Cocoa stands are spread around two ' settlements, Petit Bouaké and Mafia, each located about 2 km from the main village of Goulikao. These settlements are occupied exclusively by farmers who migrated from the country s savanna ' areas seeking arable lands for cocoa farming. The slash and burn agricultural land-use system consists of a mixture of cash and subsistence crops with fallow as an intermediary step for soil regeneration. Food crops such as plantains ( Musa spp.) are mixed with cocoa trees until 5 years of age with the aim of having, ultimately, a cocoa plantation.",
+                "The climate is subequatorial with four seasons: a long dry season, from November to February; a long wet season, from March to June; a short dry season, from July to August and a short wet season, from September to October. Rainfall for the study year was about 1444.1mm. The average monthly temperature was about 26.3 /C14 C with a low monthly variability of 1.6 /C14 C. Soils are ferralsols, with a sandy-loam texture (Assié et al., 2008). Soils pH varied between 6.3 and 7.3."
+            ]
+        },
+        {
+            "heading": "2.2. Sampling technique, design and data collection",
+            "content": [
+                "Sample plots of cocoa and teak plantations and secondary forest were selected for the study. The cocoa and teak trees selected were 26 and 13 years old, respectively, as there were enough replicates of these ages in the landscape for statistical analysis. According to a survey of farmers, the secondary forests were approximately 55 years old at Mafia and 60 at Petit-Bouaké. The cocoa plantations and secondary forests covered 2 and 2.5 ha in the different research areas (Table 1), while the teak plantations, the most extensive land-use type in the area, covered 12.4 ha in Petit-Bouaké, and 36.1 ha in Mafia.",
+                "The two general sample plot designs applicable in forest inventories for the purposes of biomass and carbon assessments are single plot and nested plot. The former is appropriate for monoculture plantations, homogenous in tree size and distribution, and, in most cases, single storeyed. The latter, usually used for forest carbon assessments, are appropriate for inventories in natural forests with high variability in tree size, distribution and structure (Ekoungoulou et al., 2015). Nested plot designs require variable size subplots for both different tree size classes, and different forest carbon pools (Brown, 2005). In order to determine the quantity of different biomasses and assess carbon stocks in different types of land use, a full nested plot design of four quadrats was used for the secondary forest sample plots, and a limited nested plot design of two quadrats for the plantation sample plots. This design yielded twelve clusters of three nested quadrats per plot, for a total of 72 clusters in six plots across the study area scale: two each of forest, teak and cocoa in each study site. The clusters were separated from each other by 100 -150m to account for spatial heterogeinty (Fig. 1b)."
+            ]
+        },
+        {
+            "heading": "2.2.1. Secondary forests",
+            "content": [
+                "Secondary forests have high variability in topography and vegetation types, hence, a nested plot design appropriately incorporates variable tree sizes into different quadrats. Four nested quadrats made up one study unit (Fig. 1a), three based on tree DBH and one of litter (leaves, barks, stems, seeds, fruits and fallen pods). DBH is recommended for assessing tree biomass and hence carbon sequestration in agricultural landscapes as it provides reliable estimation of plant biomasses with >95% accuracy (Kuyah et al., 2012). The largest quadrat, 10 /C2 10m, was used to measure trees with greater than 10 cm DBH, and contained a 5 /C2 5m quadrat for trees of 5 -10cm, a 2.5 /C2 2.5 m quadrat for trees of less than 5cm (regeneration and undergrowth), and a 0.5 /C2 0.5 m quadrat for litter.",
+                "The sample units of nested quadrats were clustered in three in right angles, and separated by 10 m (Fig. 1b; Rajoelison, 1997)."
+            ]
+        },
+        {
+            "heading": "2.2.2. Cocoa stands and teak plantations",
+            "content": [
+                "As cocoa and teak are considered monoculture plantations, homogenous in tree size and distribution, the study used a single 10 /C2 10mquadrat for trees, and a 0.5 /C2 0.5 m quadrat for litter. The sample units were arranged in clusters of three as described for secondary forest plots."
+            ]
+        },
+        {
+            "heading": "2.3. Litterfall collection and carbon carbon stock determination",
+            "content": [
+                "Litter inputs are one of the main sources of organic carbon in soils, and must be considered in carbon stock assessments. In this study, we established a correlation between litter dry weight (dry",
+                "Table 1 Characteristics of land-use types within the study areas.",
+                "| Sites | Land use types | Area (ha) |",
+                "|---------------|-----------------------------|-------------|",
+                "| | Secondary forest (60 years) | 2 |",
+                "| Petit Bouaké | Cocoa stand (26 years) | 2.5 |",
+                "| | Teak plantation (13 years) | 12.4 |",
+                "| | Secondary forest (55 years) | 2.5 |",
+                "| Ma afi| Cocoa stand (26 years) | 2 |",
+                "| Ma afi| Teak plantation (13 years) | 36.1 |",
+                "b",
+                "Fig. 1. Sample design showing (a) sampling unit considered and (b) cluster allocation within a sampling plot.",
+                "<!-- image -->",
+                "<!-- image -->",
+                "biomass), its height from the ground surface to the top of the litter pile (measured in cm with a ruler), and its carbon stock (Melillo et al., 1989). First, the 50 /C2 50cmquadrat was marked off randomly within the 2.5 /C2 2.5 m quadrat for secondary forest, and the 10 /C2 10m quadrat for plantations, and the height of the litter was measured. It was then collected and weighed, then oven dried and weigh again. The carbon stock was estimated as 50% of the dry mass of the litter (Brown, 2005; Ekoungoulou et al., 2015).",
+                "trees because they generally bifurcate below 1.30 m. When the tree bifurcates below 30 cm from the ground, each trunk is measured as if it were a whole tree."
+            ]
+        },
+        {
+            "heading": "2.4. Tree biomass estimation",
+            "content": []
+        },
+        {
+            "heading": "2.4.1. Aboveground tree biomass (AGB)",
+            "content": [
+                "In secondary forests, the trees ' DBH was measured according to the size class of each quadrat. All trees with DBH larger than 5 cm were measured and their distribution and planting density determined. An enumerator, placed at the centre of the unit of nested quadrats, counted the trees and took their measurements to ensure that no tree large enough was omitted. After measuring, each tree was immediately labelled with a numbered tag facing the centre of the unit to allow the data enumerator to distinguish between measured and unmeasured trees.",
+                "A non-destructive method and allometric equations were used to estimate aboveground biomass (AGB) in all plots, though there were differences among the plots. In teak plantations, 1.30 m from the ground was used for DBH (Cai et al., 2013), while cocoa tree diameters were measured at 30 cm. DBH is not valid with cocoa",
+                "Measurements of the litter, as described above, were extrapolated proportionally to this subplot unit, hectare and project area levels. Regeneration was counted in the 2.5 /C2 2.5 m subplot.",
+                "The different allometric equations, based on DBH values, used to quantify the aboveground biomass are depicted in Table 2",
+                "Table 2 Allometric equations used to estimate carbon stocks in aboveground and roots biomass.",
+                "| N /C14 | Species or trees species group | Variable interval | Formula | R 2 | Reference |",
+                "|----------|----------------------------------|---------------------|----------------------------------------------------------|-------|---------------------------------------------|",
+                "| 1 | Theobroma cacao | 1.3 - 26.8 (cm) | ABG=10(-1.625+2.626*LOG (d30)) | 0.98 | Segura et al., 2005a |",
+                "| 2 | Wet tropical forest woods | 5-148(cm) | ABG=exp (-2.289+2.649*LN (Dbh)-0.02 1*(LN (Dbh)) 2 ) | 0.98 | IPCC 2003 |",
+                "| 3 | Tectona grandis | 10-59(cm) | ABG=0.153*Dbh 2.382 | 0.98 | Pérez and Kanninen, 2003 |",
+                "| 4 | Root biomass | 10-59(cm) | BGB=exp (-1.0587+0.8836x LN (ABG)) | 0.84 | Cairns et al., 1997; Somarriba et al., 2013 |",
+                "- * ABG=Aboveground biomass (kg.tree-1 ), DBH=Diameter (cm) at breast height (1.30 m), Rb =Root biomass (kg.tree-1 ), BGB=Belowground biomass."
+            ]
+        },
+        {
+            "heading": "(Cairns et al., 1997; Pérez and Kanninen, 2003; IPCC, 2003; Segura et al., 2005a; Yuniati and Kurniawan, 2011; Somarriba et al., 2013).",
+            "content": [
+                "The models are specific to each species studied, namely cacao , Tectona grandis , and tropical forest trees.",
+                "Theobroma"
+            ]
+        },
+        {
+            "heading": "2.4.2. Belowground tree biomass (root biomass)",
+            "content": [
+                "Belowground biomass, essentially root biomass, can be derived directly from aboveground vegetation or estimated using allometric equations (Ekoungoulou et al., 2015). This study applied the allometric model r 2 =0.84 (Table 2, Eq. 4), developed by Cairns et al. (1997) and utilized widely by a number of other authors ( Somarriba et al., 2013). This model is an accepted methodology within the IPCC s Land Use, Land-Use Change and Forestry program ' (Penman et al., 2003)."
+            ]
+        },
+        {
+            "heading": "2.5. Aboveground, belowground and litter carbon estimation",
+            "content": [
+                "Total tree biomass was calculated using this formula: TB= AGB+BGB; with: TB=Total biomass (Kg), AGB=Above Ground Biomass; and BGB=Below Ground Biomass. Tree biomass values were converted to tree carbon stock (kg ha-1 ) using a multiplication factor of 0.5 as recommended by IPCC (2003), Brown (2005), and Ekoungoulou et al. (2015). The carbon stocks calculated at plot level were extrapolated to hectare level. Finally, the carbon density for each land-use type was obtained by summing up all carbon densities for each sampled plot. The total carbon per land use type was then converted to tons per hectare (Mg C ha-1 ).",
+                "2.6. Total carbon stored in plantations, accumulation rates of carbon and CO2fixation",
+                "The total amounts of carbon stored in each of the land-use types were estimated by multiplying the carbon stocks by the total surface areas.",
+                "The accumulation rates of carbon were calculated dividing the calculated amount by the age of concerned land use.",
+                "Car = (CS x S)/A , where",
+                "Car: Carbon stock accumulation rate (Mg ha-1 year-1 );",
+                "CS: Carbon stock (Mgha-1 );",
+                "S: Surface of land-use type (ha);",
+                "A: Age of land-use type.",
+                "The potential of emission prevented by each land-use type was determined by converting carbon stock into CO2 equivalents as recommended by Nelson et al. (1982) and Pearson et al. (2005).",
+                "<!-- formula-not-decoded -->",
+                "where:",
+                "SeqCO2: quantity of CO2 potentiallyfixed in T CO2 eq. ha-1 Cstock: total carbon stock in the land-use type;",
+                "44/12: conversion factor of carbon stock into CO2."
+            ]
+        },
+        {
+            "heading": "2.7. Statistical analysis",
+            "content": [
+                "The 10m distance separating the three units of each sampling cluster was not enough to consider them as true replicates, so their variables were averaged to form a single replicate of each cluster. The impact of land-use change on plant biomass, litter, carbon stocks and carbon dioxide stored was examined using a one-way ANOVA with the Fisher s LSD test for multiple mean comparisons. ' The relationship between litter height, litter dry biomass, and carbon stock was analysed using a linear regression (see Section 2.6.2). All statistical tests were conducted using STATISTICA 7.0 (Statsoft, Tulsa, USA)."
+            ]
+        },
+        {
+            "heading": "2.8. Results",
+            "content": []
+        },
+        {
+            "heading": "2.8.1. Trees biomass and carbon stock",
+            "content": [
+                "Secondary forests and teak plantations are by far the most considerable land-use types in terms of aboveground biomass, with AGBs of 343.5+-67.9 Mgha-1 and 429.3+-51.1 Mg ha-1 respectively, whereas cocoa stand AGBs measured 37.2+-3Mg ha-1 . The calculations of biomasses showed similar values between the forest and the teak plantations with a sharp and significant drop (Anova 1, p < 0.001) for cocoa plantations. A similar trend was observed in root biomasses with values for teak plantations and forests 8 and 7 times higher, respectively, than those beneath cocoa plantations (Table 3).",
+                "Total tree biomass, estimated by adding aboveground and root biomasses, revealed the same trend, with teak plantations and forests, displaying similar biomasses (500.4+-58.6 Mgha-1 and 401+-78Mgha-1 , respectively), significantly higher than the 45.4+-3.5 Mg ha-1 of cocoa stands (Anova 1, p < 0.001; Table 3). As carbon stocks were valued at 50% of biomass, carbon stored in the study systems also showed higher values in teak plantations and forests in above and below ground compartments as compared with cocoa trees (Anova 1, p < 0.001; Fig. 2a, b and c). The total carbon stock in teak plantations is estimated at 250.2+-29.3Mg Cha-1 (214.7+-25.6MgCha-1 in aboveground, and 35.6+-3.8 Mg Cha-1 in root compartments) and 200.7+-39MgCha-1 in forests (171.8+-33.9 MgCha-1 in above ground, and 29+-5.1 Mg C ha-1 in root compartments. Cocoa plantations contain a lower quantity of carbon as their total carbon stock was estimated at 22.7+-1.8 Mg Cha-1 (18.6+-1.4 Mg C ha-1 for aboveground, and 4.1+-0.3 MgC ha-1 for root compartments)."
+            ]
+        },
+        {
+            "heading": "2.8.2. Litter biomass and carbon storage",
+            "content": [
+                "The highest average litter thicknesses were found beneath teak (8.9+-0.5 cm) and cocoa plantations (11.5+-1.1 cm), with 5.6+-0.8 Mgha-1 for teak dry biomass and 9.3+-1.1 Mg ha-1 for cocoa. Carbon stock values of 2.8+-0.4 MgCha-1 and 4.7+-0.6 MgCha-1 were derived for teak plantation and the cocoa stand litters, respectively. The average thickness of forest litter was 4.5+-0.4 cm, and its biomass and carbon stock estimated at 4.6+-0.6 Mgha-1 and 2.3+-0.3 Mg C. ha-1 , respectively (Fig. 3a). A significant positive correlation (Fig. 3b) was observed between the average height and the stock of carbon accumulated in the litter",
+                "standard error) per pool across the different land uses.",
+                "| Pool (Mgha-1 ) | Secondary forest | Land-use types Teak plantation | Cocoa stand | P |",
+                "|----------------------|--------------------|----------------------------------|----------------|---------|",
+                "| Aboveground biomass | 343.5+-67.9 b | 429.3+-51.1 b | 37.2+-2.9 a | < 0.001 |",
+                "| Belowground biomass | 57.9+-10.2 b | 71.1+-7.5 b | 8.2+-0.6 a | < 0.001 |",
+                "| Total biomass | 401.4+-78.0 b | 500.4+-58.7 b | 45.4+-3.5 a | < 0.001 |",
+                "| Litter biomass | 4.6+-0.6 b | 5.6+-0.8 b | 9.3+-1.1 a | 0.003 |",
+                ";",
+                "Fig. 2. Variation (a) of carbon stocks in aboveground, (b) of carbon stocks in roots and (c) total stocks across land-use types. SF: secondary forests, TP: teak plantations, CP: cocoa plantations. Bars followed by different letters are significantly different ( P < 0.05, ANOVA).",
+                "<!-- image -->",
+                "(correlation of Pearson, R 2 =0.79; p < 0.001), giving the following linear model: LCS (litter carbon stock) = 0.383 * LH -0.359, with LH: litter height.",
+                "2.8.4. Rate, total carbon stored plantations and equivalent CO2"
+            ]
+        },
+        {
+            "heading": "2.8.3. Vertical distribution of carbon stocks across land-use types",
+            "content": [
+                "The calculation of estimated carbon stocks within the main three storing compartments (above-ground, roots, surface litter) revealed that more carbon (68 -85.1%) is stored above ground in all land uses (Fig. 4), followed by root compartments in forests (14.4%) and teak plantations (14.1%). Litter (17%) and roots (15%) held similar carbon stocks beneath cocoa plantations. Litters beneath forests and teak plantations held extremely low percentages of carbon stock.",
+                "At the scale of the study area, the annual mean rate of accumulation of carbon in tree total biomass varied significantly with plantation age (Anova 1, p < 0.001), with an average of 3.5+-0.7 MgCha-1 year-1 for the oldest land-use type, i.e. secondary forest (55 -60 years), 0.87+-0.07MgCha-1 year-1 for cocoa stands (26 years), and 19.3+-2.3 MgCha-1 year-1 , the highest rate, for young teak plantations (13 years). The derived CO2 mitigation potential was 12.77+-0.25 t CO2-eq. ha-1 year-1 in secondary forest, 70.4+-8.3 t CO2-eq. ha-1 year-1 in teak stands, and 3.21+-0.25 t CO2-eq. ha-1 year-1 , in cocoa stands (Table 4).",
+                "Fig. 3. (a) Variation of litter carbon stocks across the land-use types and (b) Relationship between litter height (LH) and litter carbon stock (LCS). SF: secondary forests, TP: teak plantations, CP: cocoa plantations. Bars followed by different letters are significantly different ( P < 0.05, ANOVA).",
+                "<!-- image -->",
+                "<!-- image -->",
+                "Fig. 4. Distribution of carbon stock within different pools across the land-use types. SF: secondary forests, TP: teak plantations, CP: cocoa plantations. ABG: aboveground biomass.",
+                "<!-- image -->"
+            ]
+        },
+        {
+            "heading": "3. Discussion",
+            "content": [
+                "3.1. Changes in above and belowground C stock beneath teak plantations",
+                "The biomass stocks of teak ( Tectona grandis ) stands have been subjected to extensive research in the past two decades because of their importance in the global carbon mitigation strategy (Pérez and Kanninen, 2003; Derwisch et al., 2009; Shulka and Viswanath, 2014). The study showed that the 13-year-old teak plantations had +20%moreCstockthan thesecondary forests. Thisfinding could be explained by the high planting density of teak (1700 individuals ha-1 ), which allows for morefixation of carbon with similar volumes of individual biomass (Shulka and Viswanath, 2014). Improved soil properties, characterized by good drainage and a pH value ranging between 6.3 to 7.3 provide ideal conditions for better growth of Tectona grandis (Kasoa-ard, 1981, 1998; Tanaka et al., 1998; Takahashi et al., 2009). Changes in tree plantations ' biomass and carbon stocks might be affected by planting density and sites characteristics, which in turn affected plant growth and the DBH (Eamus et al., 2000; Ofori-Frimpong et al., 2010). Management practices also in fl uence biomass production and allocation within trees in the landscape. For example, variations in coppicing (e.g., teak stands) may affect the rate of biomass accumulation after cutting (Keith et al., 2000; Kuyah et al., 2012), and pruning can change biomass without affecting the DBH. Although, forest tree density (1900 individuals ha-1 ) is higher than in teak plantations, so the high carbon stocks in teak plantations as compared to forest ecosystems could be explained by the predominance of species with DBH < 5cm. This statement is in line with previous studies, which showed that tree species carbon content is positively correlated with the diameter at breast height (Kraenzel et al., 2003; Segura et al., 2005b; Litton and Kauffman, 2008; Ekoungoulou et al., 2014).",
+                "In forest and teak plantations, most of the carbon was accumulated in the wood, followed by the roots and leaves. The trend in C concentration observed in aboveground biomass is consistent with observations made by Jain and Ansari (2013) in India who showed that timber trees ( Tectona grandis ) mostly accumulated carbon in their trunks as compared to others pools.",
+                "3.2. Modification in above and belowground C stock of cocoa plantations",
+                "Unlike teak plantations, secondary forests ' conversion into fullsun cocoa plantations resulted in marked decrease (89%) in total carbon stock, which was found in Indonesia to be close to 75 -88% (Stephan-Dewenter et al., 2007; Smiley and Kroschel, 2008). Somarriba et al. (2013) found similar results in Costa Rica. The drop in carbon stock in cocoa stands could be explained by their monospecific composition of trees with modest height and small DBH, in contrast to forests composed of multispecies trees which with fairly important height and DBH. Moreover, because cocoa trees allocate a large part of their resources to the production of pods, which will be later harvested for marketing, these man-made"
+            ]
+        },
+        {
+            "heading": "Table 4",
+            "content": [
+                "Carbon stocks (average+-standard error) in areas covered by land-use types, accumulation rate (average+-standard error) per land-use type and potential rate (average+-standard error) of CO2fixation by land uses.",
+                "| | Forest | Land use types Teak plantation | Cocoa stand | P |",
+                "|---------------------------------------------------------------------|------------------|----------------------------------|----------------|---------|",
+                "| Carbon stock by area covered per land-use (Mg C) | 736.6+-143.2b | 918.3+-107.6b | 83.4+-6.5a | < 0.001 |",
+                "| Accumulation rate of carbon in land use (Mg C ha-1 year-1 ) | 3.5+-0.7a | 19.3+-2.3b | 0.87+-0.07a | < 0.001 |",
+                "| Rate of CO2fixation (Mg CO2-eq. ha-1 year-1 ) | 12.8+-2.4a | 70.6+-8.3b | 3.2+-0.25a | < 0.001 |",
+                "*Values followed by the different letters are significantly different (P < 0.05, ANOVA).",
+                "ecosystems are characterized by low carbon stock values (Leuschner et al., 2013).",
+                "Litters and roots are usually neglected in most studies (Chave et al., 2004; Sarmiento et al., 2005; Fonseca et al., 2011). However, our study showed that these two pools accumulated the largest amount of carbon in cocoa plantations as compared to forest and teak plantations. The positive relationship between litter height and carbon stock revealed that forest disturbance increased carbon stock due mainly to the accumulation of litter on the soil. Although the forest and teak litters were estimated at 1.5% of the total carbon in their biomasses, cocoa litter made up 17% of its total carbon stock, evidencing the importance of such a pool for carbon storage, as supported by Ofori-Frimpong et al. (2010). As confirmed by Dawoe et al. (2010) in Ghana, a 30-year-old cocoa plantation exhibited higher annual litterfall production compared to the forest system, but rates of decomposition for all litter types were considerably slower in the cocoa system than in the forest site. Some authors (Swift et al., 1979; Lavelle et al., 1993) have shown that litter decomposition rates vary markedly since they can be modified mainly by rainfall patterns, soil N status, soil fauna and litter quality.",
+                "3.3. Annual accumulation rate of carbon and rate of atmospheric CO2fixation",
+                "The largest new carbon store, after the establishment of the plantation, is the trees themselves (Kraenzel et al., 2003). In this study, we observed higher carbon accumulation rate in teak plantation corresponding to highest rate of CO2fixation than other land-use types. Thirteen years after teak plantation establishment, higher carbon accumulation rate was mainly coming from the trees faster growth hence its important rate of CO2fixation. Despite differences in methodologies and environmental conditions, Bohre et al. (2013) reported similar results in 19 years of growth for a teak plantation in India with 18.59 Mg C ha-1 year-1 of carbon content and 68.16 Mg CO2-eq. ha-1 year-1 mean annual CO2 rate accumulation. The differences in carbon accumulation rate and CO2fixation between different land-use types were due to their different growth rates and the ages of the different plantations."
+            ]
+        },
+        {
+            "heading": "4. Conclusion",
+            "content": [
+                "As hypothesized, replacement of natural forests by monoculture plantations resulted in variation of carbon in aboveground, root and total biomasses. Teak plantations displayed the most promising storage capacity, much greater than forests and cocoa plantations. Aboveground biomass (214.7 Mg ha-1 ) is key to estimating the potential of teak plantations for carbon sequestration. Cocoa plantations showed the lowest carbon storage potential in ABG, but have a considerable carbon stock in the litter (4.7 Mg C ha-1 ). Ourfindings led to the conclusion that teak plantations are the main source of carbon storage in Oumé region and could therefore be included in REDD + strategy of the country. The country could consider the importance of using enrichment planting based on teak for the afforestation of degraded forest as already started in the Forêts Classées of Côte d Ivoire. The fact that ' farmers have been intensly sensitized in such practices on their own lands is encouraging."
+            ]
+        },
+        {
+            "heading": "Acknowledgements",
+            "content": [
+                "The authors wish to thank farmers and technicians whose commitmentwascrucial toachieving the outputs of this study. The access to the study area granted by the SODEFOR, one of the key stakeholders within the Oumé benchmark area, which permitted the implementation of the work, is also highly appreciated. We are also grateful to Mrs. Marcel Kouassi and Evariste Kotchi, Drs. Gerald Forkuor and Karen Greenough for editing the English version of the manuscript."
+            ]
+        },
+        {
+            "heading": "References",
+            "content": [
+                "- Assié, K.H., Angui, K.T.P., Tamia, A.J., 2008. Effet de la mise en culture et des contraintes naturelles sur quelques propriétés physiques ferralitiques au Centre-Ouest de la Côte d Ivoire: Conséquences sur la dégradation des sols. Eur. ' J. Sci. Res. 23 (1), 149 -166.",
+                "- Balac, R., 1999. Les économies pionnières prédatrices du milieu forestier: le cas de l économie de plantation en Côte d Ivoire. In: Bahuchet, S., Bley, D., Pagezy, H., ' ' Vernazza-Licht, N., L homme et la forêt tropicale, pp. 429 ' -437.",
+                "- Bhat, K.M., Gnanaharan, R., 2007. Processing and marketing of teak wood products of planted forests. Regional Workshop, 25-28 September, Kerala Forest Research Institute, Peechi, Kerala.",
+                "- Brou, Y.T., Oszwald, J., Bigot, S., Servat, E., 2005. Risques de déforestation dans le domaine permanent de l état en Côte d Ivoire: Quel avenir pour ces derniers ' ' massifs forestiers? Télédétection: tomes1-2-3 263 -275.",
+                "- Brown, S., 2005. Guide de mesure et de suivi de carbone dans les forêts et prairies herbeuses. Winrock International for United States Agency for International Development 35.",
+                "- Cai, S., Kang, X., Zhang, L., 2013. Allometric models for aboveground biomass of ten tree species in north east China. An. of For. Res. 56, 105 -122.",
+                "- Cairns, M.A., Brown, S., Helmer, E.H., Baumgardner, G.A., 1997. Root biomass allocation in the world s upland forests. Oecologia 111, 1 ' -11.",
+                "- Chave, J., Condit, R., Aguilar, A., Hernandez, A., Lao, S., Perez, R., 2004. Error propagation and scaling for tropical forest biomass estimates. Philos. Trans. R. Soc. Lond. 359, 409 -420.",
+                "- Dao, H., 1999. Connaissances de l environnement et systèmes d information ' ' géographiques: le cas de la déforestation en Côte d Ivoire. Thèse de l Université ' ' de Genève, Mention Biologie (370 p).",
+                "- Dawoe, E.K., Isaac, M.E., Quashie-Sam, J., 2010. Litterfall and litter nutrient dynamics under cocoa ecosystems in lowland humid Ghana. Plant Soil 330, 55 -64.",
+                "- Derwisch, S., Schwendenmann, L., Olschewski, R., Hölscher, D., 2009. Estimation and economic evaluation of aboveground carbon storage of Tectona grandis plantations in Western Panama. New Forests 37, 227 -240.",
+                "Eamus, D., McGuiness, K., Burrows, W., 2000. Review of allometric relationships for estimating woody biomass for Queens land, the Northern Territory and Western Australia. National Carbon Accounting System (NCAS) Technical Report No. 5A. Australia Greenhouse Office, Canberra, Australia.",
+                "- Ekoungoulou, R., Liu, X., Ifo, S.A., Loumeto, J.J., Folega, F., 2014. Carbon stock estimation in secondary forest and gallery forest of Congo using allometric equations. Inter. J. Sci. Tech. Res. 3, 465 -474.",
+                "- Ekoungoulou, R., Shukui, N., Loumeto, J.J., Ifo, S.A., Bocko, Y.E., Fleury Mikieleko, F.E., Guiekisse, E.D.M., Senou, H., Liu, X., 2015. Evaluating the carbon stock in aboveand below-Ground biomass in a moist central african forest. Appl. Ecol. Environ. Sci. 3, 51 -59.",
+                "- FAO, 2000. Global Forest Resources Assessment 2000, 140. FAO, pp. 23 -38. Fonseca, W., Alice, E.F., Ray-Benayas, J.M., 2011. Carbon accumulation in aboveground and belowground biomass and soil of different age native forest plantations in the humid tropical lowlands of Costa Rica. New for. doi:http://dx. doi.org/10.1007/s11056-011-9273-9.",
+                "- Gockowski, J., Sonwa, D., 2011. Cocoa intensification scenarios and their predicted impact on CO2 emissions, biodiversity conservation, and rural livelihoods in the Guinea rainforest of West Africa. Environ. Manag. 48 (2), 307 -321.",
+                "- Hartemink, A.E., 2005. Nutrient stocks, nutrient cycling, and soil changes in cocoa ecosystems: a review. Adv. Agron. 86, 227 -253.",
+                "- IPCC, 2003. Good Practise Guidance for Land-Use, Land-Use Change and Forestry from the Intergovernmental Panel on Climate Change. IPCC.",
+                "- Jain, A., Ansari, S.A., 2013. Quantification by allometric equations of carbon sequestered by Tectona grandis in different agroforestry systems. J. for. Res. 24, 699 -702.",
+                "- Kasoa-ard, A., 1981. Teak ( Tectona grandis ), it's distribution and related factors. Nat. Hist. Bul. Siam Soc. 29, 55 -74.",
+                "- Kasoa-ard, A., 1998. Overview of problems in teak plantation establishment. In: Kashio, M., White, K. (Eds.), Teak for the Future, Proceedings of the Second Regional Seminar on Teak. RAP Publication, grre (ISBN 974-86342-9-9).",
+                "- Keith, H., Barret, D., Keenan, R., 2000. Review of Allometric Relationships for Estimating Woody Biomass for New South Wales, the Australian Capital Territory, Victoria, Tasmania and South Australia. National Carbon Accounting System (NCAS) Technical Report No. 5B, Australia Greenhouse Office, Canberra, Australia.",
+                "- Kraenzel, M., Castillo, A., Moore, T., Potvin, C., 2003. Carbon storage of harvest-age teak ( Tectona grandis ) plantations. Panama.For. Ecol. Manag. 173, 213 -225. Kuyah, S., Dietz, J., Muthuri, C., Jamnadass, R., Mwangi, P., Coe, R., Neufeldt, H., 2012.",
+                "- Allometric equations for estimating biomass in agriculture landscapes: I: Aboveground biomass. Agr. Ecosyst. Environ. 158, 216 -224.",
+                "- Lanly, J.P., 1982. Tropical forest resources. FAO Forestry Paper 30. Food and Agricultural Organization of the United Nations, Rome (106 pp).",
+                "- Leuschner, C., Moser, G., Hertel, D., Erasmi, S., Leitner, D., Culmsee, H., Schuldt, B., Schwendenmann, L., 2013. Conversion of tropical moist forest into cacao agroforest: consequences for carbon pools and annual C sequestration. Agrofor. Syst. 87, 1173 -1187.",
+                "Litton, C.M., Kauffman, J.B., 2008. Allometric models for predicting aboveground biomass in two widespread woody plants in Hawaii. Biotropica 40, 313 -320. Melillo, J.M., Aber, J.D., Linking, A.E., Ricca, A., Fry, B., Nadelhoffe, K.J., 1989. Carbon and nitrogen dynamics along the decay continuum: plant litter to soil organic matter. Plant Soil 115, 189 -198.",
+                "Ofori-Frimpong, K., Afrifa, A.A., Acquaye, S., 2010. Impact of shade and cocoa plant densities on soil organic carbon sequestration rates in a cocoa growing soil of Ghana. Afr. J. Environ. Sci. Technol. 4, 621 -624.",
+                "Pérez, D., Kanninen, M., 2003. Above ground biomass of Tectona grandis plantations in Costa Rica. J. Trop. For. Sci. 15, 199 -213.",
+                "Païvinen, R., Pitkanen, J., Witt, R., 1992. Mapping closed forest cover in West Africa: using NOAA/AVHRR-LAC data. Silva Carelica 21, 27 -51.",
+                "Rajoelison, G.L., 1997. Etude d un peuplement- analyse sylvicole. Manuel forestier n ' (5. Département des eaux et forêts, Ecole supérieure des Sciences Agronomiques. Université d Antananarivo (26 p.). '",
+                "Ruf, F., 1997. Les cycles du cacao en Côte d Ivoire: la remise en cause d un modèle. In ' ' Le modèle ivoirien en questions. Crises, ajustements, recompositions. Karthala ORSTOM, Paris, pp. 249 -264.",
+                "SODEFOR, 2002. Plan d aménagement de la forêt classée de la Bossématié (1995 ' -2014). Projet sectoriel forestier du Centre de Gestion d Abengourou. Abidjan, C ' ôte d Ivoire. 97 pp. '",
+                "Sarmiento, G., Pinillos, M., Garay, I., 2005. Biomass variability in tropical American lowland rainforests. Ecotropicos 18, 1 -20.",
+                "Segura, M., Andrade, H., Somarriba, E., Villalobos, M., 2005a. Estimación del carbono almacenado yfijado en sistemas agroforestales indígenas con cacao en la zona de Talamanca, Costa Rica. Informefinal de consultoría, Proyecto Captura de carbono y desarrollo de mercados ambientales en sistemas agroforestales indígenas con cacao en Costa Rica. CATIE, Tirrialba, CR (46p + anexos).",
+                "Segura, M.A., Kanninen, M., Suarez, D., 2005b. Allometric models for estimating aboveground biomass of shade trees and coffee bushes grown together. Agrofor. Syst. 68, 143 -150.",
+                "Shulka, S.R., Viswanath, S., 2014. Comparative study on growth: wood quality andfinancial returns of teak ( Tectona grandis L.f) managed under three different agroforestry practices. Agrofor. Syst. 88, 331 -341.",
+                "Smiley, G.L., Kroschel, J., 2008. Temporal change in carbon stocks of cocoa-Gliricidia agroforests in Central Sulawesi. Indonesia.Agrofor. Syst. 73, 219 -231. Somarriba, E., Cerda, R., Orozco, L., Cifuentes, M., Davila, H., Espin, T., Mavisoy, H., Avila, G., Alvarado, E., Poveda, V., Astorga, C., Say, E., Deheuvels, O., 2013. Carbon stocks and cocoa yields in agroforestry systems of Central America. Agric. Ecosyst. Environ. 173, 46 -57.",
+                "Stephan-Dewenter, I., Kesslerc, M., Barkmannc, J., Bosa, M., Buchorig, D., Erasmih, S., Fausth, H., Kappash, M., Köhlerh, S., Leuschnerd, C., Maertensj, M., Marggrafe, R., Migge-Kleiank, S., Mogeai, J., Pitopangl, R., Schaeferk, M., Schwarzem, S., Spornd, S.G., Steingrebek, A., Tjitrosoedirdjoi, S.S., Tjitrosoemitoi, S., Tweleh, A., Weberh, R., Woltmannk, L., Zellerm, M.N., Tscharntkea, T., 2007. Trade-offs between income, biodiversity and ecosystem functioning during tropical rainforest conversion and agroforestry intensification. PNAS 104 (12), 4973 -4978.",
+                "Takahashi, M., Hirai, K., Limtong, P., Leaungvutivirog, C., Suksawang, S., Panuthai, S., Anusontpornperm, S., Marod, D., 2009. Soil respiration in different ages of teak plantations in Thailand. Jpn. Agric. Res. Quart. 43, 337 -343.",
+                "Tanaka, N., Hamazaki, T., Vacharangkura, T., 1998. Distribution, growth and site requirements of teak. Jpn. Agric. Res. Quart. 32, 65 -77.",
+                "Tondoh, E.J., Kouamé, F.N., Guéi, A.M., Sey, B., Koné, A.W., Gnessougou, N., 2015. Ecological changes induced by full-sun cocoa farming in Côte d Ivoire. Global ' Ecol. Conserv. 3, 575 -595."
+            ]
+        }
+    ]
+}

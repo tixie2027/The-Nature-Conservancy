@@ -1,1 +1,11 @@
+pandas
+numpy
+groq
+langchain_community
+langchain_huggingface
+transformers
+scikit-learn
+sentence-transformers
+python-dotenv
+faiss-cpu
 docling

@@ -1,0 +1,243 @@
+{
+    "sections": [
+        {
+            "heading": null,
+            "content": [
+                "<!-- image -->",
+                "See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/251398339"
+            ]
+        },
+        {
+            "heading": "Simulation of carbon pool changes in woodlots in eastern Zambia using the CO2FIX model",
+            "content": [
+                "<!-- image -->"
+            ]
+        },
+        {
+            "heading": "Simulation of carbon pool changes in woodlots in eastern Zambia using the CO2FIX model",
+            "content": [
+                "Martin L. Kaonga • Tim P. Bayliss-Smith",
+                "Received: 20 April 2011 / Accepted: 6 August 2011 / Published online: 21 August 2011 /C211 Springer Science+Business Media B.V. 2011",
+                "Abstract Agroforestry systems have the potential to contribute significantly to climate change mitigation and adaptation. However, data on tree and soil organic carbon (SOC) pools for most agroforestry systems are lacking because reliable methods for estimating ecosystem carbon (C) pools are scarce. This study quantified the effects of five Leucaena species ( L. leucocephala, L. macrophylla, L. diversifolia, L. collinsii and L. pulverulenta ) on vegetal and soil C stocks and on mean annual increment (MAI) in aboveground tree C stocks. Specifically, it tested the validity of the CO2FIX model using empirical data from 7 year-old woodlots at Msekera, Zambia, and assessed the impact of converting a degraded agricultural ecosystem to woodlots on C stocks. Measured above- and below-ground tree C stocks and MAI of aboveground biomass differed significantly among the Leucaena species. Measured stem and total aboveground tree C stocks in seven-year old woodlots ranged from 17.1 to 29.2 and from 24.5 to 55.9 Mg ha -1 , respectively. Measured SOC stocks at 0-200 cm depth in Leucaena stands ranged from 106.9 ( L. diversifolia ) to 186.0 Mg ha -1 ( L. leucocephala ). Modeled stem",
+                "&",
+                "M. L. Kaonga ( ) A Rocha International, Sheraton House, Cambridge CB3 0AX, UK e-mail: mlk23@cantab.net",
+                "T. P. Bayliss-Smith",
+                "Department of Geography, University of Cambridge, Downing Place, Cambridge CB2 3EN, UK",
+                "and branch C stocks closely matched measured stocks, but the soil module of CO2FIX did not predict the soil C. The soil C data are inconclusive at this stage. We recommend that a fractionation and a soil aggregate hierarchy study backed by C dating is carried out to explain soil C dynamics in these soils. However, the model can be used only for estimating changes in aboveground tree C stocks in woodlots until soil C module is proven to predict SOC stocks.",
+                "Keywords Aboveground biomass /C1 Leucaena species /C1 Soil organic carbon /C1 Vegetal carbon stocks /C1 Woodlots"
+            ]
+        },
+        {
+            "heading": "Introduction",
+            "content": [
+                "Agroforestry systems have recently generated international interest because of their potential to contribute significantly to ecosystem-based mitigation of, and adaptation to, climate change, especially in the developing countries. They store large quantities of carbon (C) in plants and the soil (Kaonga and Bayliss-Smith 2009; Soto-Pinto et al. 2010), sequester C from the atmosphere (IPCC 2007; Kaonga and Coleman 2008), contribute to protection of natural forest ecosystems (IPCC 2001; FAO 2002), and improve soil productivity (Kimaro et al. 2007; Jose 2009). Strategic C management in these tree-based",
+                "ecosystems requires understanding the effects of different plant species on C capture and storage based on standardized data collection techniques (Brown et al. 2004; IPCC 2006). However, data on vegetal and soil organic carbon (SOC) pools and fluxes for most agroforestry systems are lacking because reliable methods for estimating the ecosystem C pools are scarce.",
+                "Biomass estimates are useful for quantifying net primary productivity, energy pathways, nutrient and C cycles, harvestable biomass yields, and in evaluating habitats and combustible fuels (Saint-Andre ´ et al. 2005; Delitti et al. 2006). The most accurate method for estimation of plant biomass and changes in C stocks for a stand is through periodic destructive harvesting (Brown et al. 2004; Basuki et al. 2009). However, cutting and weighing a sufficient number of trees to represent the size and species distribution in an ecosystem is complex, time consuming, tedious, and labor intensive (Delitti et al. 2006). Similarly, measuring SOC pools and their fluxes is difficult because of enormous spatial variations in C densities, even at plot level (Morisada et al. 2004; Kaonga and Bayliss-Smith 2009). In addition, SOC data for many regions are scarce because soil analyses are costly, time-consuming, and labor-intensive (Liski et al. 2002; Reum et al. 2009). Where data from long-term experiments are available, ecosystem models can be useful for estimating plant and soil C stocks and fluxes (Falloon and Smith 2002; Kaonga and Coleman 2008) and in assessing the impact of various environmental and ecosystem management scenarios.",
+                "The CO2FIX model has been used to estimate the dynamics of C stocks and flows for a variety of ecosystems around the world (Schelhaas et al. 2004). It is an invaluable tool that has contributed to IPCC climate assessments and estimation of C implications in the context of the Kyoto Protocol (Gaboury et al. 2009). The CO2FIX model thus holds great promise for improving impact assessments of ecosystembased mitigation of, and adaptation, to climate change through agroforestry. However, this model has not been tested using empirical data from a variety of agroforestry systems and especially from the tropics.",
+                "This study evaluated the CO2FIX model as a tool for estimating the C pools using empirical data from seven year-old Leucaena woodlots in eastern Zambia. Specifically, this study (i) quantified the effects of",
+                "Leucaena woodlots on tree and soil C stocks, and mean annual increment (MAI) in aboveground tree C stocks, and (ii) simulated tree and soil C stocks and changes to test the CO2FIX model against empirical data from Leucaena woodlots in eastern Zambia."
+            ]
+        },
+        {
+            "heading": "Methodology",
+            "content": [
+                "The seven-year old woodlot experiment at Msekera comprised five Leucaena species: L. leucocephala (K28) (Lam.) De Wit , L. macrophylla (55/88) Benth. , L. diversifolia (45/87) (Schltdl.) Benth. , L. collinsii ( 45/85 ) Britton & Rose , and L. puverulenta (8487) (Schltdl.) Benth., arranged in a randomized complete block design (RCBD) with three replicates. Trees were planted at a spacing of 1 9 1 m in plots measuring 10.5 9 10.5 m and were established without a field crop component as part of an agroforestry tree screening trial. The trees were harvested at 18 months and allowed to regrow for a further period of 7 years.",
+                "To assess the impact of land use types on SOC stocks, grass fallows (GF), miombo woodlands (miombo), and continuously cropped maize ( Zea mays L.) with fertilizer (M ? F) and without fertilizer (M -F) treatments also formed part of the experiment. In November 2002, hybrid maize (MM604) was sown in all fallow plots and maize monoculture plots (M -F and M ? F) on the flat, at 30 cm within and 75 cm between rows giving a population of 44,444 plants ha -1 . The maize crop was hand-weeded twice, in December 2002 and February 2003. In M ? F monoculture system, a basal dose of NPK 10:20:10 (200 kg ha -1 ) at sowing and an additional dose of urea (46% N; 200 kg ha -1 ) at four weeks after planting were applied."
+            ]
+        },
+        {
+            "heading": "The CO2FIX model",
+            "content": [
+                "The CO2FIX model (Schelhaas et al. 2004) calculates the C balance and turnover in terrestrial ecosystems, using a full C accounting approach. The model has biomass, soil, products, financial, bioenergy, and carbon accounting modules. The CO2FIX model has been tested and validated for various temperate and tropical ecosystems including the forest ecosystems in the Philippines, mixed pine-oak forest of central Mexico, and multi-strata agroforestry systems and",
+                "tropical rainforests in Costa Rica (Schelhaas et al. 2004). The model provides two alternative ways to define stem growth of each cohort: (a) as a function of tree or stand age, and (b) as a function of the cohort total and maximum aboveground biomass. The latter input option has been added because in tropical forests often diameter dependent growth of trees rather than age dependent growth is normal.",
+                "The CO2FIX model estimates SOC stocks and flows through the YASSO model as a function of litter input (Liski et al. 2003) on a hectare scale using time steps of one year. The YASSO model consists of a non-woody litter component (leaf), two woody compartments (fine wood litter and coarse woody litter), and five decomposition compartments (extractives, holocellulose, lignin-like compounds, fast decomposing humus, and slow decomposing humus; Fig. 1). The materials cascade from the compartment with a rapid decomposition rate to the ones with a slow decomposition rate. The YASSO model requires data on mean annual temperature (MAT,",
+                "Fig. 1 Flow chart of soil carbon model in the CO2FIX model (Liski et al. 2005). The boxes represent carbon compartments and arrows represent carbon fluxes",
+                "<!-- image -->",
+                "/C176 C), precipitation (Prec, mm), and potential evapotranspiration (PET) during the growing season. The model is user-friendly due to its simplicity for input data requirements and other parameters."
+            ]
+        },
+        {
+            "heading": "Study area and experiments",
+            "content": [
+                "The CO2FIX model was applied to 7 year-old Leucaena woodlots at Msekera in eastern Zambia (13 39 S 32 34 /C176 0 /C176 0 E), at an altitude of 1030 m, and with a mean annual temperature (MAT) of 22 C. A /C176 mean annual rainfall of 960 mm is received during a single rainy season extending from November to April. The cropping season in Zambia coincides with the rainy season, which stretches from December to March. The soil is an Ustic Rhodustalf (USDA) with 26% clay, 61% sand, and 13% silt. Air-dried soil (0-15 cm) had a pH 5.3 (1:2.5 soil/water suspension); KCl extractable Ca, 3.0 cmolc kg -1 ; organic C, 10 g kg -1 ; and total N, 0.7 g kg -1 ."
+            ]
+        },
+        {
+            "heading": "Input data needed to run the CO2FIX model",
+            "content": [
+                "The CO2FIX model parameters relevant to woodlots were selected from recent studies and are shown in Table 1. The climatic data needed to run the model included temperature and drought index. The 57 year (1933-1990) MAT and 85 year (1903-1988) mean monthlyprecipitation obtained from Chipata (13.55 /C176 S 32.50 /C176 E) (www.worldclimate.com; accessed 12 Oct 2009) and 10 year average annual precipitation and temperature obtained from Msekera were used to calculate the PET values. The YASSO model was initialized by estimating the mean annual plant residue inputs to the soil for the land use system that preceded the simulation period.",
+                "Table 1 Sources of main parameter values for the CO2FIX model",
+                "| Groups of main parameters | Sources |",
+                "|--------------------------------|-------------------------------------------------------------------------------------------------------|",
+                "| Climate data | www.worldclimate.com (accessed 12/10/2009) |",
+                "| Current annual increment (CAI) | Albrecht and Kandji (2003), Kaonga (2005), Kwesiga et al. (1994), and Kaonga and Bayliss-Smith (2009) |",
+                "| Biomass allocation rates | Albrecht and Kandji (2003), Kaonga (2005), and Kaonga and Bayliss-Smith (2009) |",
+                "| Mortality rates | Kaonga (2005) |",
+                "| Litter | Kaonga (2005) |",
+                "| Decomposition rates | Standard (Young 1989) |"
+            ]
+        },
+        {
+            "heading": "Model parameterization",
+            "content": [
+                "The CO2FIX model was parameterized to conditions in eastern Zambia. Tree growth was modeled as a function of tree or stand age and biomass growth was expressed as current annual increment (CAI, total stem volume/age) of stem volume. Tree biomass components (leaf, branch, stem, and roots) in woodlots were expressed as fractional growth rates of tree biomass. Biomass C content (48%, Kaonga 2005) was determined by analysis of tree component samples using a LECO CHN-1000 analyzer.",
+                "In the YASSO model, the standard values were first determined for climate conditions typical of eastern Zambia: 22 C for MAT and 960.3 mm for /C176 drought index (a measurement of dryness)-based on precipitation in the growing season, PET, and MAT ( /C176 C) for the nearest station (Chipata; www.world climate.com; accessed 12 Oct 2009) and data from Msekera Research Station. The YASSO model was calibrated for European conditions using the Priestley-Taylor equation (Liski et al. 2003). However, PET at Msekera was calculated using the Thornthwaite method because long-term solar radiation data were not available. Although the method is not as accurate as the Priestley-Taylor equation, it provides useful estimates and its application is simple (Palosuo et al. 2005).",
+                "Litterfall estimates were derived from previous litter studies at Msekera (Kwesiga et al. 1994; Kaonga 2005). Mean annual litter input to the soil in the previous land use was assumed to be constant under normal conditions with an average value of 3.2 Mg ha -1 year -1 . Stem litter was not included in the simulations because it was difficult to measure annual stem mortality and litter input. CO2FIX default fractionation and decomposition rates for tropical deciduous trees were used in simulation of C stocks of woodlots."
+            ]
+        },
+        {
+            "heading": "Running the model",
+            "content": [
+                "The current and future plant and soil C stocks were estimated using the CO2FIX model. Future SOC stocks were simulated based on the assumptions that (i) there are consistent climatic differences between years in the simulation period (7 years), (ii) there were no natural or anthropogenic disturbances, such as fire, thinning, or pests and diseases related mortality, and (iii) observed SOC stocks were in a steady state. The SOC stocks were initialized by a spin-up run to the actual simulation run. For initialization, climate data and litter input data were used. The resulting initial SOC was 49.4 Mg ha -1 . For fractionation and decomposition rates, the values were determined using equations according to reference values and differences in standard conditions. Data from two separate studies at Msekera were used to calculate CAI values for the second and seventh years. Since the CO2FIX model uses time steps of one year to simulate C stocks in aboveand belowground tree components, missing CAI values were generated by the model through interpolation."
+            ]
+        },
+        {
+            "heading": "Plant and soil carbon measurements",
+            "content": [
+                "At the end of the seven-year rotation, 18-24 randomly selected trees were harvested from each woodlot treatment in January 2003 for C analyses. The sampling procedure was derived from methods of Kumar and Tewari (1999). Before selecting the trees for destructive sampling, total tree height (H) and diameter at breast height (DBH) measurements of all trees in each plot were taken to assess intra-specific variability in the plot. This variable is used to select sample trees to ensure that they adequately represent the diameter and height classes above and below the stand/plot average. It is also used to determine the appropriate sample size to reduce sampling error by including sufficient number of trees from different diameter classes. Each randomly selected tree, cut 10 cm above the soil surface, was manually partitioned into stems, branches, twigs, and leaves. The stem sub-sample comprised discs (5 cm thick) at 0, 40, and 70% of tree height. After weighing individual fractions of each sampled tree, representative samples were collected for C analysis, fraction-wise. Total biomass of a sample tree was calculated by adding dry weights of all components, and stocks were expressed as Mg C ha -1 . Means of 20 sample plants per species were used for subsequent statistical analyses. A default conversion factor of 0.26 times aboveground tree C stocks was used to calculate the root C stocks (IPCC 2003). MAI was derived from total net primary production (NPP) of the ecosystem by dividing woody biomass by the age of the woodlot (IPCC 2003).",
+                "Soil samples for SOC analyses were collected from woodlots at Msekera, GF, M -F, and M ? F plots, and in miombo woodland at depths of 0-5, 5-10, 10-15, 15-20, 20-25, 25-40, 40-60, 60-100, 100-150, and 150-200 cm from five (5) locations in the central 49 m 2 area of each plot. Soil samples were composited for each depth and three samples representing each depth in a plot were collected for C analyses. In the miombo woodland, soil samples were collected at 15 randomly selected locations, composited by depth, and three representative samples were drawn for each depth. To determine bulk density, soil samples were also collected at 5 cm intervals between 0 and 25 cm depth using core rings as described by Rowell (1994). Bulk density values for depths between 25 and 200 cm were provided by the Zambia/ICRAF Agroforestry Project from measurements taken at the same site (Chintu et al. 2004). Soil samples were solar-dried and analyzed for SOC by Walkley-Black method. For each depth, C densities were determined as a product of bulk density, C concentration, and horizon thickness."
+            ]
+        },
+        {
+            "heading": "Statistical analysis",
+            "content": [
+                "Analyses of variances (ANOVA) were conducted using SAS version 8.01 for completely randomized block design on combined data for the experiments to: (i) determine the effects of seven year-old woodlots on vegetal and soil C stocks, and (ii) to examine the effects Leucaena species, soil depth, texture, and land-use on SOC stocks and their distribution between 0 and 200 cm depths. Data were also analyzed using a repeated measures model to examine the effects Leucaena species and depth on SOC stocks and distribution between 0 and 200 cm depth. The coefficients of variation (CV) between treatment mean values (TCV: (100(TMS) 1/2 /Mean)) were calculated for each ANOVA. Treatment means were declared significantly different when P \\ 0.05 using Tukey's Studentised Range (HSD) procedure of mean separation."
+            ]
+        },
+        {
+            "heading": "Results and discussion",
+            "content": [
+                "Measured tree carbon stocks in Leucaena woodlots",
+                "Measured tree C stocks and mean annual C increment (MAI) of aboveground C stocks differed significantly ( P \\ 0.01) across Leucaena species (Table 2). L. pulverulenta had significantly larger aboveand belowground tree C stocks (73.9 Mg C ha -1 ) than other species (32.6-44.2 Mg C ha -1 ). Its MAI value was also significantly ( P \\ 0. 01) higher than those of other Leucaena species. The rates, which ranged from 3.5 ( L. macrophylla ) to 8.0 Mg C ha -1 year -1 ( L. pulverurenta ), were within the published range for 7-8 year-old short rotation plantations (0.5-19.2 Mg C ha -1 year -1 ) in seven developing countries including Brazil, India, Philippines, and Tanzania (Sathaye",
+                "Table 2 Carbon stocks (t ha -1 ) in above- and belowground tree biomass of seven-year Leucaena woodlot regrowth at Msekera, eastern Zambia",
+                "| Tree C pools | Woodlots | Woodlots | Woodlots | Woodlots | Woodlots | Woodlots | Woodlots |",
+                "|-----------------------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------|",
+                "| | L. pulverulenta | L. collinsii | L. diversifolia | L. leucocephala | L. macrophylla | HSD0.01 | P \\ 01 |",
+                "| Biomass carbon (Mg ha - 1 ) | Biomass carbon (Mg ha - 1 ) | Biomass carbon (Mg ha - 1 ) | Biomass carbon (Mg ha - 1 ) | Biomass carbon (Mg ha - 1 ) | Biomass carbon (Mg ha - 1 ) | Biomass carbon (Mg ha - 1 ) | Biomass carbon (Mg ha - 1 ) |",
+                "| Stem | 29.2a | 19.5b | 19.5b | 17.1b | 17.6b | 5.9 | 0.01 |",
+                "| Branches | 17.9a | 7.8ab | 10.5ab | 13.6ab | 5.1b | 7.4 | 0.01 |",
+                "| Twigs | 2.9a | 0.9b | 1.0b | 1.1b | 0.6b | 0.7 | 0.01 |",
+                "| Leaves | 5.5a | 2.3b | 2.2b | 1.1b | 1.1b | 2.1 | 0.01 |",
+                "| Total aboveground | 55.9a | 30.4b | 33.2b | 32.3b | 24.5b | 14.8 | 0.01 |",
+                "| Root | 17.6 | 10.2 | 11.1 | 12.6 | 8.1 | | |",
+                "| Total biomass | 73.9a | 40.6b | 44.3b | 45.0b | 32.6b | 17.5 | 0.01 |",
+                "| MAI (Mg C ha - 1 year - 1 ) | 8.0 | 4.3 | 4.7 | 4.6 | 3.5 | | |",
+                "Means within a row followed by the same letter are not significantly different at P \\ 0.01 using Tukey's Studentised Range (HSD) Test",
+                "et al. 2001). By contrast, MAI rates in this study were greater than those (0.9-1.3 Mg ha -1 year -1 ) published for miombo woodland in Zambia (Chidumayo 1998). If C sequestration is a major objective of woodlot establishment, L. pulverulenta would be the best species for maximization of C capture in tree biomass under these plantation conditions.",
+                "Total aboveground tree C stocks in woodlots varied significantly ( P \\ 0.01) between tree species, ranging from 24.5 ( L. macrophylla ) to 55.9 Mg ha -1 ( L. pulverulenta ). Goel and Behl (2002) also found significant differences in biomass production (24-70 Mg ha -1 ) of 8 year old L. leucocephala , L. diversifolia , and L. shannoni Donn. woodlots in Tanzania. Based on 48% C content of tree biomass in Leucaena stands (Kaonga 2005), total aboveground C stocks in this study (24.9-55.9 Mg ha -1 ) were greater than those (11.5-33.6 Mg C ha -1 ) found in 8 year old Leucaena woodlots in Tanzania, presumably because the study site in Tanzania was relatively drier than the site in eastern Zambia.",
+                "Mean C stocks in aboveground tree parts (stems, branches, and leaves) differed significantly ( P \\ 0.01) between species. Stem C socks which ranged from 17.1-29.2 Mg ha -1 , accounted for 29-72% of aboveground tree C stocks, while branch C stocks contributed 21-42% to aboveground C stocks. Although L. pulverulenta had the largest stem and branch C stocks, L. leucocephala allocated the largest fraction (42%) of aboveground C to branches. The proportion of captured C allocated to branches was similar to that (8.1-17.6 Mg ha -1 ) allocated to roots across species. Leaf C stocks in L. pulverulenta stands (5.5 Mg ha -1 )",
+                "were 2.4-5 times greater than those found in other Leucaena provenances (Table 2). Therefore, the quantity of C sequestered in aboveground biomass of Leucaena woodlots depended mainly on species/ provenances included in a stand and L. pulverulenta was the best species for capturing C in tree biomass."
+            ]
+        },
+        {
+            "heading": "Measured SOC stocks",
+            "content": [
+                "Soil organic C stocks between 0 and 200 cm depths in woodlot treatments at Msekera ranged from 106.9 ( L. diversifolia ) to 186.0 Mg ha -1 ( L. leucocephala (Fig. 2). The stocks in L. leucocephala and L. collinsii stands were greater than those found in adjacent miombo woodland by 33.3 and 26.4 Mg ha -1 , respectively. Soil organic C densities in Leucaena treatments were similar at 0-40 cm depth presumably because of redistribution of SOC during cultivation prior to establishment of woodlots. By contrast, there were substantial differences in densities across treatments at 40-200 cm depth. Since the woodlots were only 7 years old, large variations in soil C densities at deeper depth could not be fully explained by interspecific variations. Other sources of variations possibly include roots and/or dissolved organic C (DOC) transport which substantially contributes to a Decadally-Reactive Soil C Pool (Baisden and Parfitt 2004) from previous vegetation, and redistribution of SOC due cultivation for commercial maize production (Chintu et al. 2004) predating woodlot establishment. Several tillage/C sequestration studies have shown that root length densities and SOC stocks in tilled soils were greater at deeper depths (Dolan et al. 2006; Baker et al.",
+                "Soil organic carbon stocks (Mg ha-') in treatments",
+                "<!-- image -->",
+                "2007), and deep root systems associated with tree legumes deposit C at depth (Mendham et al., 2003). Fractionation and soil aggregate hierarchy studies backed by C dating could explain soil C dynamics in these soils.",
+                "Measured and CO2FIX-simulated aboveground tree carbon stocks woodlots",
+                "The capacity of the CO2Fix model to simulate aboveground tree C stocks differed across tree parts (Table 3). Modeled stem C stocks (16.3-17.5 Mg ha -1 ) closely matched measured stocks (17.119.5 Mg ha -1 ), with a mean percentage bias of 7%. Similarly, there was a strong agreement between measured total aboveground C stocks (24.4-33.2 Mg ha -1 ) and modeled stocks (23.5-30.6 Mg ha -1 ) resulting in a 9% bias, presumably because the stem biomass constitutes the largest portion of aboveground biomass for most species. By contrast, the model underestimated branch and leaf C stocks by 29 and 39%, respectively. The degree of convergence between measured and modeled stocks was stronger for stem and total aboveground biomass than for branches and leaves because the CAI values were determined using stem diameter measurements, while the CO2FIX model generated annual biomass allocation coefficients for foliage and branches relative to stems, and (ii) senescence of leaves and branches introduces variance in fractional allocation coefficients. Therefore, the model accurately predicted stem and total aboveground C stocks, but estimates of tree C stocks could be improved through long-term data collection.",
+                "There were variations in degrees of convergence between measured and modeled tree component (stem, branches, and leaves) carbon stocks across species. Measured stem C stocks of L. leucocephala (17.1 Mg ha -1 ) and L. macrophylla (17.6 Mg ha -1 ) closely matched modeled stocks, with percentage bias of less than 1%. By contrast, the model underestimated stem C stocks of L. diversifolia and L. collinsii by 16 and 11%, respectively. Percentage bias values ranged from 2 to 19% for total aboveground C stocks, 22-40% for branches, and 22-62% for leaves. Therefore, the model more accurately estimated stem C stocks than branch and leaf stocks.",
+                "Agroforestry research in southern Africa has not generated sufficient data to simulate C stocks in woodlots accurately. For example, inputs of wood density, CAI, and annual biomass allocation coefficients of tree components relative to stem biomass were required for tree species in the woodlot, but very limited data were available. Use of default, proxy, or published values derived from other studies reduces the predictive power of the model because such values might have intrinsic uncertainties, which are propagated through the model. Model parameters and inputs might vary with environmental conditions, geographic location, and time (Bo ¨ttcher et al. 2008). Despite limitations in long-term climatic and tree growth data, the CO2FIX model simulated stem and total aboveground C stocks that closely matched measured stocks in woodlots. Therefore, the model",
+                "Table 3 Measured and CO2FIX-simulated plant and soil carbon stocks in seven-year old Leucaena woodlots at Msekera, eastern Zambia",
+                "| Plant and soil carbon stocks | Species | Species | Species | Species | Species | Species | Species | Species |",
+                "|----------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|",
+                "| | L. leucocephala | L. leucocephala | L. diversifolia | L. diversifolia | L. macrophylla | L. macrophylla | L. collinsii | L. collinsii |",
+                "| | Measured | Simulated | Measured | Simulated | Measured | Simulated | Measured | Simulated |",
+                "| Aboveground tree C stocks (Mg ha - 1 ) | Aboveground tree C stocks (Mg ha - 1 ) | Aboveground tree C stocks (Mg ha - 1 ) | Aboveground tree C stocks (Mg ha - 1 ) | Aboveground tree C stocks (Mg ha - 1 ) | Aboveground tree C stocks (Mg ha - 1 ) | Aboveground tree C stocks (Mg ha - 1 ) | Aboveground tree C stocks (Mg ha - 1 ) | Aboveground tree C stocks (Mg ha - 1 ) |",
+                "| Foliage C | 2.2 | 2.8 | 3.2 | 2.1 | 1.7 | 2.7 | 3.1 | 1.2 |",
+                "| Stem C | 17.1 | 17.2 | 19.5 | 16.3 | 17.6 | 17.5 | 19.5 | 17.4 |",
+                "| Branch C | 13.6 | 10.6 | 10.5 | 8.5 | 5.1 | 3.3 | 7.8 | 6.4 |",
+                "| Total aboveground C | 32.3 | 30.6 | 33.2 | 26.9 | 24.4 | 23.5 | 30.4 | 25.0 |",
+                "| Soil organic C (Mg ha - 1 ) | Soil organic C (Mg ha - 1 ) | Soil organic C (Mg ha - 1 ) | Soil organic C (Mg ha - 1 ) | Soil organic C (Mg ha - 1 ) | Soil organic C (Mg ha - 1 ) | Soil organic C (Mg ha - 1 ) | Soil organic C (Mg ha - 1 ) | Soil organic C (Mg ha - 1 ) |",
+                "| 0-100 cm depth | 139.0 | 49.7 | 91.2 | 51.8 | 92.0 | 45.1 | 132.8 | 53.3 |",
+                "| 0-200 cm depth | 186.0 | | 106.9 | | 115.0 | | 179.4 | |",
+                "Data for SOC stocks for L. pulverulenta plots were omitted in this table because initial laboratory analyses gave abnormal values",
+                "can be used to accurately estimate changes in aboveground tree C stocks in woodlots, but its performance would be greatly enhanced with increased availability of accurate inputs for running the model."
+            ]
+        },
+        {
+            "heading": "Measured and CO2FIX-simulated soil carbon stocks woodlots",
+            "content": [
+                "Table 3 shows mean values of organic C content and bulk density of soils from Leucaena treatments at Msekera in eastern Zambia. Soil organic C density decreased with increasing soil depth across tree species, presumably because much of the litterfall and root decomposition to SOC in tree-based land use systems happens in the upper soil layers. Biological activities, which are more pronounced in the surface layers than in the subsoil, enhance physical and chemical protection of SOC in soil aggregates. As a result, mean soil bulky density values increased with increasing depth in all Leucaena treatments.",
+                "Modeled SOC stocks (45.1-53.3 Mg ha -1 ) at 100 cm depth in Leucaena woodlots at Msekera were 2.2-3.4 times lower than measured stocks (109.3-169 Mg ha -1 ) (Table 4) presumably because (i) soil bulk density values for the 25-200 cm were derived from other studies, and (ii) the soil module does not adequately predict bulk density changes due to cumulative effects of annual litter inputs. Oelbermann and Voroney (2011) observed that the Century model underestimated simulated values in the alley cropping systems compared to measured values due to the inability of the model to account for changes in soil bulk density with increasing organic matter inputs with tree age from prunings or litterfall. In addition, the soil C module of the CO2FIX model could not estimate SOC stocks presumably because several factors affected the fit of the model to experimental data. First, woodlots were established on land that was previously used for traditional maize production, suggesting that soils were disturbed and probably not in equilibrium. Model calibrations to current SOC stocks that assume equilibrium state when soils are in a transient state may overestimate decomposition rates of the slowest pools (Wutzler and Reichstein 2006; Bo ¨ttcher et al. 2008). Moreover, roots and/or dissolved organic C from previous vegetation contribute to a Decadally-Reactive Deep Soil Carbon Pool (Baisden and Parfitt 2004), which must be adequately accounted for.",
+                "Second, due to lack of accurate long-term and complete empirical data on climate, litter quality and quantity, and tree growth model, default values were used. In the absence of reliable and complete data, (i) PET was calculated using the Thornthwaite equation instead of the Priestley equation, (ii) default",
+                "Table 4 SOC content and soil bulk density in Leucaena woodlots at Msekera Regional Agricultural Research Station in eastern Zambia",
+                "| Soil depth (cm) | L. macrophylla | L. macrophylla | L. collinsii | L. collinsii | L. leucocephala | L. leucocephala | L. diversifolia | L. diversifolia |",
+                "|-------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|",
+                "| Soil depth (cm) | SOC (g 100 g - 1 soil) | Bulk density (g cm ) 3 | SOC (g 100 g - 1 soil) | Bulk density (g cm ) 3 | SOC (g 100 g - 1 soil) | Bulk density (g cm ) 3 | SOC (g 100 g - 1 soil) | Bulk density (g cm ) 3 |",
+                "| 0-5 | 1.6 ± 0.2 | 1.22 | 2.2 ± 0.4 | 1.23 | 2.4 ± 0.5 | 1.20 | 1.8 ± 0.5 | 1.29 |",
+                "| 5-10 | 1.3 ± 0.3 | 1.20 | 1.8 ± 0.3 | 1.25 | 1.9 ± 0.3 | 1.25 | 1.3 ± 0.3 | 1.28 |",
+                "| 10-15 | 1.1 ± 0.2 | 1.32 | 1.3 ± 0.2 | 1.30 | 1.7 ± 0.4 | 1.30 | 1.2 ± 0.2 | 1.38 |",
+                "| 15-20 | 1.1 ± 0.2 | 1.39 | 1.4 ± 0.1 | 1.30 | 1.6 ± 0.3 | 1.32 | 1.1 ± 0.3 | 1.40 |",
+                "| 20-25 | 1.1 ± 0.2 | 1.46 | 1.2 ± 0.2 | 1.41 | 1.4 ± 0.2 | 1.40 | 1.0 ± 0.2 | 1.41 |",
+                "| 25-40 | 0.7 ± 0.2 | 1.50 | 1.2 ± 0.1 | 1.50 | 1.2 ± 0.1 | 1.45 | 0.8 ± 0.1 | 1.50 |",
+                "| 40-60 | 0.6 ± 0.2 | 1.52 | 0.8 ± 0.3 | 1.50 | 1.0 ± 0.1 | 1.50 | 0.6 ± 0.2 | 1.50 |",
+                "| 60-100 | 0.3 ± 0.1 | 1.55 | 0.5 ± 0.5 | 1.55 | 1.1 ± 0.8 | 1.56 | 0.2 ± 0.2 | 1.53 |",
+                "| 100-150 | 0.2 ± 0.0 | 1.56 | 0.4 ± 0.2 | 1.55 | 0.3 ± 0.1 | 1.56 | 0.1 ± 0.0 | 1.57 |",
+                "| 150-200 | 0.1 ± 0.1 | 1.57 | 0.2 ± 0.1 | 1.56 | 0.3 ± 0.1 | 1.58 | 0.1 ± 0.0 | 1.57 |",
+                "Data for SOC stocks for L. pulverulenta plots were omitted in this table because initial laboratory analyses gave abnormal values",
+                "values of temperature sensitivity for humus decomposition, initial decomposition rates for soluble compounds, and chemical components of litter were used in simulations, (iii) the model estimated CAI, biomass allocation coefficients of tree components relative to stems, and litter turnover from the third to sixth year, and (iv) data collected by different researchers at different times and for different purposes were used to calculate SOC stocks. These values were sources of uncertainty, which was propagated in the model simulations.",
+                "Thirdly, calibration of the model for a location requires adequate spatial and temporal data covering parameters in the model. Bo ¨ttcher et al. (2008) argues CO2FIX regressions describe differences in organic matter decomposition due to varying climatic conditions along the geographical gradient. Applying these regressions to describe intra-location differences in decomposition due to annual climatic variability assumes short-term acclimatization of the decomposer community to changing environmental conditions is similar to differences among different communities genetically adapted to different geographical gradients. Finally, although the model assumes that decomposition rates are uniform across the 0-100 cm soil profile, oxidation of SOM declines with increasing depth. These factors might have introduced sampling, recording, and analytical errors that contributed to underestimation of SOC stocks. Therefore, the results of testing the soil module of the CO2FIX using soil carbon data form woodlots at Msekera in Zambia are inconclusive at this stage. Further studies to generate more inputs for model parameterization are needed."
+            ]
+        },
+        {
+            "heading": "Conclusions",
+            "content": [
+                "Assessment of the effects of five Leucaena tree species on above- and below-ground tree C stocks in woodlots showed that L. pulverulenta had significantly larger above- and below-ground C stocks, and MAI of total aboveground stocks, than other Leucaena species. Carbon capture and storage in tree biomass through establishment of Leucaena woodlots can be maximized through planting selected species with high biomass yields and MAI.",
+                "Although large variations in measured SOC densities were observed across species, the actual contribution of species to these densities could not be determined. However, SOC stocks in L. leucocephala and L. collinsii plots were substantially greater than those of other species. Better understanding of soil C densities and their distribution in the 0-200 cm soil profile could be enhanced through fractionation and soil aggregate studies backed by carbon dating.",
+                "Evaluation of the CO2Fix model as a tool for estimation of C stocks using data from woodlots showed that measured stem and total aboveground C stocks were closely matched to modeled stocks. The degrees of convergence between measured and modeled stocks were stronger for stem, branches and total aboveground biomass than leaves. Therefore, the CO2Fix model can be used to accurately estimate changes in stem and total aboveground tree C stocks in woodlots.",
+                "The soil module of the CO2Fix model could not estimate SOC stocks presumably because of inadequate long-term empirical data on climate, litter quality, and quantity, and tree growth, and the transient nature of SOC stocks in fields that were disturbed in recent decades. Therefore, the results of testing the CO2FIX using soil C data from woodlots at Msekera are inconclusive at this stage. The module can be used only for estimating changes in aboveand belowground tree C stocks in woodlots until soil C module is proven to accurately predict SOC stocks in eastern Zambia. The study underlines the need for long-term data collection to generate more inputs for model parameterization.",
+                "Acknowledgments Authors thank staff of the World Agroforestry Centre (ICRAF) and staff of the Zambia/ICRAF Agroforestry Project, especially Dr P.L. Mafongoya, for their professional and logistical support during the field studies. We are equally indebted to the Gates Cambridge Trust at Cambridge University for funding the study."
+            ]
+        },
+        {
+            "heading": "References",
+            "content": [
+                "Albrecht A, Kandji ST (2003) Carbon sequestration in tropical agroforestry systems. Agric Ecosyst Environ 99:15-27 Baisden WT, Parfitt RL (2004) Significant bomb 14 C enrichment in the deep soil: a previously unknown decadal pool.",
+                "http://www.regional.org.au/au/asssi/supersoil2004/s10/oral/ index.htm#TopOfPage. Accessed 28 Mar 2011",
+                "Baker JM, Ochsner TE, Venterea RE (2007) Tillage and soil carbon sequestration-what do we really know? Agric Ecosyst Environ 118:1-5",
+                "Basuki TM, van Laake PE, Skidmore AK, Hussin YA (2009) Allometric equations for estimating aboveground biomass in tropical lowland dipterocarp forests. For Ecol Manag 237:1684-1694",
+                "Bo ¨ttcher H, Kurz WA, Freibauer A (2008) Accounting of forest carbon sinks and sources under a future climate protocol: factoring out past disturbance and management effects on age-class structure. Environ Sci Policy 11(8): 669-686",
+                "Brown JH, Gillooly JH, Allen AP, Savage VM, West GB (2004) Toward a metabolic theory of ecology. Ecology 85:1771-1789",
+                "Chidumayo EN (ed) (1998) Deforestation in Zambia. Handbook Series 2. Environmental Council of Zambia, Lusaka",
+                "Chintu R, Mafongoya PL, Chirwa TS, Mwale M, Matibini J (2004) Subsoil nitrogen dynamics as affected by planted coppicing tree legume fallows in eastern Zambia. Exp Agric 40:327-340",
+                "Chirwa PW, Ong CK, Maghembe J, Black CR (2007) Soil water dynamics in intercropping systems containing Gliricidia sepium , pigeon pea and maize in southern Malawi. Agrofor Syst 69:29-43",
+                "Delitti WBC, Meguro M, Pausas J (2006) Biomass and mineral mass estimates in a cerrado ecosystem. Revista Brasileira de Bota ˆnica 29(4):531-540",
+                "Dolan MS, Clapp CE, Allmaras RR, Baker JM, Molina JAE (2006) Soil organic nitrogen in a Minnesota soil as related to tillage, residue, and nitrogen management. Soil Tillage Res 89:221-231",
+                "Falloon P, Smith P (2002) Simulating SOC changes in longterm experiments with Roth-C and Century: model evaluation for regional scale application. Soil Use Manag 18(2):101-111",
+                "FAO (2002) Harvesting carbon sequestration through land use: a way out of rural poverty? In: The state of food and agriculture, FAO, Rome. http://www.fao.org/docrep/004/ y6000e/y6000e14.htm#P0\\_0. Accessed 23 April 2003",
+                "Gaboury S, Boucher JF, Villeneuve C, Lord D, Gagnon R (2009) Estimating the net carbon balance of boreal open woodland afforestation: a case-study in Quebec's closedcrown boreal forest. For Ecol Manag 257:483-494",
+                "Goel VL, Behl H (2002) Selection of Leucaena species for afforestation and amelioration of sodic soils. Land Degrad Dev 13(15):387-393",
+                "IPCC (2001) Climate change 2001: the scientific basis. IPCC Third Assessment Report, Working Group I, Technical Summary, Cambridge University Press, Cambridge",
+                "IPCC (2003) IPCC good practice guidance for LULUCF sector. Intergovernmental panel on climate change, Cambridge University Press, Cambridge",
+                "IPCC (2006) Guidelines for national greenhouse gas inventories. IGES, ISBN 4-88788-032-4",
+                "IPCC (2007) Climate change 2007: the physical science basis. Basic summary for policy makers. http://ipcc-wg1.ucar.",
+                "edu/docs/WG1AR4\\_SPM\\_PlenaryApproved.pdf. Accessed 15 July 2008",
+                "Jose S (2009) Agroforestry for ecosystem services and environmental benefits: overview. Agrofor Syst 76(1):1-10",
+                "Kaonga ML (2005) Understanding carbon dynamics in agroforestry systems in eastern Zambia. PhD Dissertation, Fitzwilliam College, University of Cambridge",
+                "Kaonga ML, Bayliss-Smith TP (2009) Carbon pools in tree biomass and the soil in improved fallows in eastern Zambia. Agrofor Syst 76:37-51",
+                "Kaonga ML, Coleman K (2008) Modeling soil organic carbon turnover in improved fallows in eastern Zambia using the RothC-23.6 model. For Ecol Manag 250:1160-1166",
+                "Kimaro AA, Timmer VR, Mugasha AG, Chamshama AO, Kimaro DA (2007) Nutrient use efficiency and biomass production of tree species for rotational woodlot systems in semi-arid Morogoro, Tanzania. Agrofor Syst 71(3): 175-184",
+                "Kumar VSK, Tewari VP (1999) Aboveground biomass tables for Azadrachta indica a. Juss. Intern For Rev 1(2): 109-111",
+                "Kwesiga F, Phiri D, Simwanza CP (1994) Zambia-ICRAF Research Project Report No. 87. ICRAF, Nairobi",
+                "Liski J, Perruchoud D, Karjailanen T (2002) Increasing carbon stocks in forest soils of western Europe. For Ecol Manag 169:159-175",
+                "Liski J, Nissinen A, Erhard M, Taskinen O (2003) Climatic effects on litter decomposition from arctic tundra to tropical rainforests. Glob Chn Biol 9:1-10",
+                "Liski J, Palosuo T, Peltoniemi M, Sieva ¨nen R (2005) Carbon and decomposition model Yasso for forest soils. Ecol Model 189(1-2):168-182",
+                "Morisada K, Ono K, Kanomata H (2004) Organic carbon in forest soils in Japan. Geoderma 119:21-32",
+                "Oelbermann M, Voroney RP (2011) An evaluation of the Century model to predict soil organic carbon: examples from Costa Rica and Canada. Agrofor Syst 82(1):37-50",
+                "Palosuo T, Liski J, Trofymow JA, Titus BD (2005) Litter decomposition affected by climate and litter qualitytesting the Yasso model with litter data from Canadian intersite decomposition experiment. Ecol Model 189: 183-198",
+                "Reum LA, Noh NJ, Cho Y, Lee W, Son Y (2009) Estimating carbon stocks for Pinus densifolia forest using soil carbon model, Yasso. J Ecol Field Biol 32(1):47-53",
+                "Rowell DL (1994) Soil science methods and applications. Addison Wesley Longman Limited, Essex, p 360",
+                "Saint-Andre ´ L, M'bou Mabiala A, Mouvondy W, Jourdan C, Roupsard A, Deleporte P, Hamel O, Nouvellon Y (2005) Age-related equations for aboveand below-aground biomass of Eucalyptus hybrid in Congo. For Ecol Manag 205:199-214",
+                "Sathaye JA, Makundi WR, Aandrasko K, Boer R, Ravindranath NH, Sudha P, Rao S, Lasco R, Pulhin F, Masera O, Ceron A, Ordonez J, Deying X, Zhang X, Zuomin S (2001) Carbon mitigation potential and costs of forestry options in Brazil, China, India, Indonesia, Mexico, Philippines and Tanzania. Mitig Adapt Strat Glob Chn 6: 185-211",
+                "Schelhaas MJ, Van Esch PW, Groen TA, Kanninen M, Liski J, Masera O, Mohren GMJ, Nabuurs GJ, Pedroni L, Pussinen A, Vallejo A, Palosuo T, and Vilen T (2004) CO2FIX V 3.1-a modeling framework for quantifying carbon sequestration in forest ecosystems. ALTERRA Report 1068, Wageningen",
+                "Soto-Pinto L, Anzueto M, Mendoza J, Ferrer GJ, de Jong B (2010) Carbon sequestration through agroforestry in",
+                "- indigenous communities of Chiapas, Mexico. Agrofor Syst 78:39-51",
+                "Wutzler T, Reichstein M (2006) Soils apart from equilibriumconsequences for soil carbon balance modelling. Biogeosci Discuss 3:1679-1714",
+                "Young A (1989) Agroforestry for soil conservation. CAB International, ICRAF, Oxford, p 276"
+            ]
+        }
+    ]
+}
