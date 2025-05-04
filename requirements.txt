@@ -9,3 +9,7 @@ sentence-transformers
 python-dotenv
 faiss-cpu
 docling
+ollama
+json
+sqlite3
+re
