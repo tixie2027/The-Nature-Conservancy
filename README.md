@@ -12,7 +12,7 @@ Developed by Harvey Mudd College students in collaboration with The Nature Conse
 - `json_heading_fix.ipynb`: (Notebook) Standardizes JSON structure into sections like Introduction, Methods, Results, etc.
 - `main.py`: Automates the pipeline — takes a PDF, outputs cleaned JSON in one step.
 - `example_data.zip`: Contains example inputs and outputs.
-- `RAG.py`: (In development) Uses LLaMA 3.1 with Ollama for local RAG on processed JSON documents.
+- `Llama3.1_8B.py`: (In development) Uses LLaMA 3.1 with Ollama for local RAG on processed JSON documents.
 
 ---
 
