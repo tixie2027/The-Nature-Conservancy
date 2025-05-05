@@ -49,13 +49,13 @@ pip install -r requirements.txt
 
 3. (Optional) Standardize structure using `json_heading_fix.ipynb`.
 
-4. (Optional) Run `RAG.py` for retrieval-based question answering on parsed documents.
+4. (Optional) Run `Llama3.1_8B.py` for retrieval-based question answering on parsed documents.
 
 ---
 
 ## Example Application
 
-- Identify whether a paper discusses agroforestry, carbon sequestration, or soil composition using LLaMA 3.1 + Ollama (see `RAG.py`).
+- Identify whether a paper discusses agroforestry, carbon sequestration, or soil composition using LLaMA 3.1 + Ollama (see `Llama3.1_8B.py`).
 
 ---
 
