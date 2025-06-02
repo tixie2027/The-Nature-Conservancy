@@ -9,10 +9,18 @@ def clean_text_with_ftfy(text):
 
     # Ligature and glyph name replacements
     ligature_replacements = {
-        ' /uniFB01 ': 'fi',   # Replace fi ligature glyph
+        '/uniFB01': 'fi',   # Replace fi ligature glyph
         '/uniFB02': 'fl',   # Replace fl ligature glyph (if encountered)
-        ' /C0 ': '-',
-        ' /C6 ': '+-',
+        '/uniFB00': 'ff', 
+        '/uniFB03': 'ffi', 
+        '/C0': '-',
+        '/C6': '+-',
+        '/C1': '·',
+        '/C2': 'x',
+        '/C211': '@',
+        '/C24': '~',
+        '/C21': '>',
+        '/C3': '*',
     }
 
     # Additional replacements (newlines, dashes, control characters)
