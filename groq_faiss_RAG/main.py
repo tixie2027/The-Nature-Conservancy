@@ -1,6 +1,11 @@
 from dotenv import load_dotenv
 load_dotenv()
 from groq import Groq
+import json
+from pathlib import Path
+from termcolor import colored
+import spacy
+import numpy as np
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
 import os
@@ -8,20 +13,94 @@ from sentence_transformers import SentenceTransformer
 from nltk.tokenize import sent_tokenize
 from sklearn.metrics.pairwise import cosine_similarity
 
-def get_relevant_excerpts(user_question, docsearch):
-    """
-    Perform similarity search and return top 3 excerpts with titles.
-    """
-    relevant_docs = docsearch.similarity_search(user_question, k=3)
-    excerpts = []
+# OLD ARTICLE PICKER:
 
-    for doc in relevant_docs:
-        title = doc.metadata.get("title", "Unknown Source")
-        excerpt = f"📄 **{title}**\n{doc.page_content.strip()[:2000]}..."  # Truncate for safety
-        excerpts.append(excerpt)
+# def get_relevant_excerpts(user_question, docsearch):
+#     """
+#     Perform similarity search and return top 3 excerpts with titles.
+#     """
+#     relevant_docs = docsearch.similarity_search(user_question, k=3)
+#     excerpts = []
 
-    return "\n\n---\n\n".join(excerpts)
+#     for doc in relevant_docs:
+#         title = doc.metadata.get("title", "Unknown Source")
+#         excerpt = f"📄 **{title}**\n{doc.page_content.strip()[:2000]}..."  # Truncate for safety
+#         excerpts.append(excerpt)
 
+#     return "\n\n---\n\n".join(excerpts)
+
+
+def cosine(u, v):
+    return float(np.dot(u, v) / (np.linalg.norm(u) * np.linalg.norm(v) + 1e-9))
+
+
+def get_relevant_excerpts(query,q_vec,embedding_function,metadata,folder_of_jsons):
+   
+    ## ELIMINATE ARTICLES WITHOUT MAIN DETAILS IN Q
+    nlp = spacy.load("en_core_web_sm")
+    doc = nlp(query)
+    entities = [ent.text for ent in doc.ents if ent.label_ in ["ORG", "PERSON", "GPE", "LOC", "PRODUCT", "NORP", "FAC"]]
+    print(colored(entities, "blue"))
+    
+    # Only filter if we found entities in the query
+    if entities:
+        articles_to_remove = []
+        
+        # Loop through folder of jsons
+        for filename, meta in metadata.items():
+            article_path = Path(folder_of_jsons, filename)
+            try:
+                with open(article_path, 'r', encoding='utf-8') as f:
+                    article_json = f.read()  # Read as string
+                    
+                    # Check if ALL entities are present in the article string
+                    entity_missing = False
+                    for entity in entities:
+                        if entity.lower() not in article_json.lower():
+                            entity_missing = True
+                            break
+                    
+                    # If even one entity is missing, mark for removal
+                    if entity_missing:
+                        articles_to_remove.append(filename)
+                        
+            except (FileNotFoundError, UnicodeDecodeError) as e:
+                print(colored(f"Error processing {filename}: {e}", "red"))
+                articles_to_remove.append(filename)
+        
+        # Remove articles that don't contain ALL entities
+        for filename in articles_to_remove:
+            metadata.pop(filename, None)
+        
+        print(colored(f"Filtered from {len(metadata) + len(articles_to_remove)} to {len(metadata)} articles", "green"))
+    
+    ## KEY WORDS
+    for filename, meta in metadata.items():  
+        keywords = meta["key_words"]
+        for i in range(len(keywords)):
+            if(keywords[i] in query):
+                meta["score"] += 0.5
+    ## SUMMARY COMPARISONS
+    for meta in metadata.values():
+        if "summary_vec" not in meta:              # cache so can reuse later
+            meta["summary_vec"] = embedding_function.embed_query(meta["summary"])
+
+        sim = cosine(q_vec, meta["summary_vec"])   # −1 … 1
+        meta["score"] += sim      
+
+    
+    ranked = sorted(metadata.items(), key=lambda x: x[1]["score"], reverse=True)
+    relevant_articles = []
+    for fname, meta in ranked[:5]:                 # top-5 example
+        print(f"{fname:55s}  score={meta['score']:.3f}")
+        print(colored(meta["key_words"],"red"))
+        with open(Path(folder_of_jsons,fname)) as f:
+            relevant_articles.append(str(f))
+
+
+    return relevant_articles
+    
+    
 def chunk_document(text):
     """
     Chunk documents by using basic tokenizer
@@ -109,14 +188,23 @@ def main():
     print("\n🌿 Agroforestry RAG System (Powered by FAISS + Groq)")
     print("Ask a question related to carbon stocks, sequestration, soil data, or agroforestry studies.\n")
 
+    
+ 
+    
+    embed_model = SentenceTransformer("sentence-transformers/multi-qa-mpnet-base-dot-v1")
     while True:
+        with open("metadata.json", "r") as f:
+            metadata = json.load(f)
+        for filename, meta in metadata.items():  
+            meta["score"] = 0
+
         user_question = input("🔎 Your question: ").strip()
         if not user_question:
             continue
-
-        excerpts = get_relevant_excerpts(user_question, faiss_index)
-
-        embed_model = SentenceTransformer("sentence-transformers/multi-qa-mpnet-base-dot-v1")
+        q_vec = embedding_function.embed_query(user_question) 
+        path_to_articles = "/Users/sharm51155/Downloads/completed JSONs"
+        excerpts = get_relevant_excerpts(user_question, q_vec, embedding_function, metadata, path_to_articles)
+        
         context = rerank_context(excerpts, user_question, 20, embed_model) # pulls the 20 most relevant sentences
 
         response = generate_response(client, model, user_question, context)
