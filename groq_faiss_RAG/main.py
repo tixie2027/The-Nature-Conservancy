@@ -5,6 +5,8 @@ import json
 from pathlib import Path
 from termcolor import colored
 import spacy
+import nltk
+
 import numpy as np
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
@@ -40,6 +42,7 @@ def get_relevant_excerpts(query,q_vec,embedding_function,metadata,folder_of_json
     nlp = spacy.load("en_core_web_sm")
     doc = nlp(query)
     entities = [ent.text for ent in doc.ents if ent.label_ in ["ORG", "PERSON", "GPE", "LOC", "PRODUCT", "NORP", "FAC"]]
+    print(colored("Retrieved extracts:"))
     print(colored(entities, "blue"))
     
     # Only filter if we found entities in the query
@@ -68,11 +71,15 @@ def get_relevant_excerpts(query,q_vec,embedding_function,metadata,folder_of_json
                 print(colored(f"Error processing {filename}: {e}", "red"))
                 articles_to_remove.append(filename)
         
+        if(len(articles_to_remove)!=len(metadata)):
         # Remove articles that don't contain ALL entities
-        for filename in articles_to_remove:
-            metadata.pop(filename, None)
+            for filename in articles_to_remove:
+                metadata.pop(filename, None)
         
         print(colored(f"Filtered from {len(metadata) + len(articles_to_remove)} to {len(metadata)} articles", "green"))
+
+        
+
     
     ## KEY WORDS
     for filename, meta in metadata.items():  
@@ -91,16 +98,45 @@ def get_relevant_excerpts(query,q_vec,embedding_function,metadata,folder_of_json
     
     ranked = sorted(metadata.items(), key=lambda x: x[1]["score"], reverse=True)
     relevant_articles = []
-    for fname, meta in ranked[:5]:                 # top-5 example
-        print(f"{fname:55s}  score={meta['score']:.3f}")
-        print(colored(meta["key_words"],"red"))
-        with open(Path(folder_of_jsons,fname)) as f:
-            relevant_articles.append(str(f))
 
+    for rank, (fname, meta) in enumerate(ranked[:5], start=1):  # top-5
+        file_path = Path(folder_of_jsons, fname)
+        print(f"{fname:55s}  score={meta['score']:.3f}")
+        print(colored(meta["key_words"], "red"))
+ 
+        with open(file_path, "r", encoding="utf-8") as f:
+            article_dict = json.load(f)
+
+        article_str = json.dumps(article_dict, indent=2, ensure_ascii=False)
+
+        relevant_articles.append({
+            "label": f"ARTICLE {rank}",          # or use meta.get("title", …)
+            "text":  article_str
+        })
 
     return relevant_articles
     
-    
+
+def rerank_context_per_article(articles, query, sentences_per_article, embed_model):
+    """
+    For each article:
+      • split into sentences
+      • rerank sentences vs. the query
+      • keep the top k
+    Return a single string that preserves ARTICLE 1 / ARTICLE 2 … blocks.
+    """
+    blocks = []
+
+    for art in articles:
+        sentences   = chunk_document(art["text"])
+        reranked    = rerank_chunks(sentences, query, embed_model)
+        top_k_sents = [s for s, _ in reranked[:sentences_per_article]]
+
+        block = f'{art["label"]}:\n' + "\n".join(top_k_sents)
+        blocks.append(block)
+    print("\n\n".join(blocks))
+    return "\n\n".join(blocks)    
+
 def chunk_document(text):
     """
     Chunk documents by using basic tokenizer
@@ -133,17 +169,18 @@ def rerank_chunks(chunks, query, embed_model):
     scored_chunks.sort(key=lambda x: x[1], reverse=True)
 
     return scored_chunks
-
 def rerank_context(excerpts, user_question, relevant_count, embed_model):
     """
-    Performs reranking given excerpts, and returns a cleaned string with relevant_count
-    number of sentences pulled from excerpts
+    Performs reranking given excerpts, and returns a cleaned string with
+    `relevant_count` sentences pulled from those excerpts.
     """
-    chunks = chunk_document(excerpts)
 
+    if isinstance(excerpts, list):
+        excerpts = "\n".join(excerpts)   # collapse list → one big string
+
+    chunks = chunk_document(excerpts)    # now safe: string → sent_tokenize
     reranked = rerank_chunks(chunks, user_question, embed_model)
-
-    context = "\n".join([chunk for chunk, _ in reranked[:relevant_count]])
+    context  = "\n".join(chunk for chunk, _ in reranked[:relevant_count])
 
     return context
 
@@ -152,10 +189,10 @@ def generate_response(client, model, user_question, relevant_excerpts):
     Generate a grounded response using Groq + relevant text.
     """
     system_prompt = """
-You are an expert in agroforestry and carbon sequestration. Use the excerpts from peer-reviewed scientific papers to answer the user's question. 
+ You will be given a number of excerpts from research papers related to agroforestry and carbon sequestration. Answer the user's question based on the information in these papers in as concise as a way as possible. The information may be only in parts of the articles provided to you, differentiate between information which is nessecary and that which is irrelevant to the task. If the answer is not present in the given articles say so. You can assume that the articles are looking at data from the same location as mentioned in the question. Some of the data in provided excerpts may be provided in tabular-like form, interpret these for quantitative results.
 Quote directly when possible, and always cite the paper title in parentheses after the quote.
 """
-
+    print(colored(relevant_excerpts,"blue"))
     chat_completion = client.chat.completions.create(
         model=model,
         messages=[
@@ -170,6 +207,7 @@ Quote directly when possible, and always cite the paper title in parentheses aft
 def main():
     model = "llama3-8b-8192"
     groq_api_key = os.getenv("GROQ_API_KEY")
+    hugging_face_key = os.getenv("HUGGINGFACE_HUB_TOKEN")
 
     if not groq_api_key:
         raise EnvironmentError("Missing GROQ_API_KEY in environment.")
@@ -191,24 +229,28 @@ def main():
     
  
     
-    embed_model = SentenceTransformer("sentence-transformers/multi-qa-mpnet-base-dot-v1")
+    embed_model = SentenceTransformer("sentence-transformers/multi-qa-mpnet-base-dot-v1", token=hugging_face_key)
     while True:
         with open("metadata.json", "r") as f:
             metadata = json.load(f)
         for filename, meta in metadata.items():  
             meta["score"] = 0
 
-        user_question = input("🔎 Your question: ").strip()
+        user_question = input(colored("🔎 Your question: ", "yellow")).strip()
+
         if not user_question:
             continue
         q_vec = embedding_function.embed_query(user_question) 
         path_to_articles = "/Users/sharm51155/Downloads/completed JSONs"
         excerpts = get_relevant_excerpts(user_question, q_vec, embedding_function, metadata, path_to_articles)
+        context = rerank_context_per_article(excerpts, user_question,
+                                     sentences_per_article=6,
+                                     embed_model=embed_model)
         
-        context = rerank_context(excerpts, user_question, 20, embed_model) # pulls the 20 most relevant sentences
+        # context = rerank_context(excerpts, user_question, 30, embed_model) # pulls the 20 most relevant sentences
 
         response = generate_response(client, model, user_question, context)
-        print("\n🧠 Answer:\n" + response + "\n")
+        print(colored("\n Answer:\n" + response + "\n", "magenta"))
 
 
 
