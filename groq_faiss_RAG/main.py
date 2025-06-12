@@ -169,6 +169,7 @@ def rerank_chunks(chunks, query, embed_model):
     scored_chunks.sort(key=lambda x: x[1], reverse=True)
 
     return scored_chunks
+
 def rerank_context(excerpts, user_question, relevant_count, embed_model):
     """
     Performs reranking given excerpts, and returns a cleaned string with
@@ -184,14 +185,38 @@ def rerank_context(excerpts, user_question, relevant_count, embed_model):
 
     return context
 
-def generate_response(client, model, user_question, relevant_excerpts):
+def generate_response(client, model, user_question, relevant_excerpts, benchmarking):
     """
     Generate a grounded response using Groq + relevant text.
     """
+
     system_prompt = """
- You will be given a number of excerpts from research papers related to agroforestry and carbon sequestration. Answer the user's question based on the information in these papers in as concise as a way as possible. The information may be only in parts of the articles provided to you, differentiate between information which is nessecary and that which is irrelevant to the task. If the answer is not present in the given articles say so. You can assume that the articles are looking at data from the same location as mentioned in the question. Some of the data in provided excerpts may be provided in tabular-like form, interpret these for quantitative results.
-Quote directly when possible, and always cite the paper title in parentheses after the quote.
+You are an expert assistant for interpreting scientific research on agroforestry and carbon sequestration.
+
+Use the provided excerpts from research papers. If the answer is not present, say: "Answer not found in provided excerpts."
+
+If possible, quote values directly and cite the source in parentheses using the paper title. Interpret tables if needed.
+
+Assume the excerpts are from the same location mentioned in the question.
+
+Be concise. Avoid extra context, interpretation, or commentary.
+
+
+Here are examples of ideal answers:
+
+Q: "What is the carbon impact of planting Leucaena + Napier in Central Kenya, Meru south?"  
+A: "18.6 g/kg"
+
+Q: "What is the carbon impact of planting cropland in Badessa?"  
+A: "3.19 g.kg-1"
+
+Q: "What is the carbon sequestration of Acacia Senegal in Mbeere?"  
+A: "Answer not found in provided excerpts."
+
 """
+    if benchmarking:
+        system_prompt = "Always respond with **only** the **numerical value and unit**. No explanations or no extra text." + system_prompt
+
     print(colored(relevant_excerpts,"blue"))
     chat_completion = client.chat.completions.create(
         model=model,
@@ -225,11 +250,9 @@ def main():
 
     print("\n🌿 Agroforestry RAG System (Powered by FAISS + Groq)")
     print("Ask a question related to carbon stocks, sequestration, soil data, or agroforestry studies.\n")
-
-    
- 
     
     embed_model = SentenceTransformer("sentence-transformers/multi-qa-mpnet-base-dot-v1", token=hugging_face_key)
+
     while True:
         with open("metadata.json", "r") as f:
             metadata = json.load(f)
@@ -241,15 +264,14 @@ def main():
         if not user_question:
             continue
         q_vec = embedding_function.embed_query(user_question) 
-        path_to_articles = "/Users/sharm51155/Downloads/completed JSONs"
+        #path_to_articles = "/Users/sharm51155/Downloads/completed JSONs"
+        path_to_articles =  os.getenv("path_to_articles")
         excerpts = get_relevant_excerpts(user_question, q_vec, embedding_function, metadata, path_to_articles)
         context = rerank_context_per_article(excerpts, user_question,
                                      sentences_per_article=6,
                                      embed_model=embed_model)
-        
-        # context = rerank_context(excerpts, user_question, 30, embed_model) # pulls the 20 most relevant sentences
 
-        response = generate_response(client, model, user_question, context)
+        response = generate_response(client, model, user_question, context, benchmarking = False)
         print(colored("\n Answer:\n" + response + "\n", "magenta"))
 
 
