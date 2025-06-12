@@ -1,0 +1,860 @@
+[
+  {
+    "question": "What is the aboveground_carbon + belowground_carbon of planting intercropping in Rajowal/Ladhowal?",
+    "true_answer": "20.35 MgC/ha",
+    "model_answer": "Aboveground_carbon + belowground_carbon of planting intercropping in Rajowal/Ladhowal: Answer not found in provided excerpts.",
+    "similarity": 0.3169226050376892
+  },
+  {
+    "question": "What is the total soil organic carbon of planting cropland in Balachaur?",
+    "true_answer": "0.48 MgC/ha",
+    "model_answer": "4.88 g/kg",
+    "similarity": 0.6425557732582092
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting silviculture (tree monocrop) in Sutana?",
+    "true_answer": "0.4 %",
+    "model_answer": "0.40%",
+    "similarity": 0.9727789163589478
+  },
+  {
+    "question": "What is the belowground_biomass of planting other multistrata in Mamlay?",
+    "true_answer": "1258 kgBM/ha",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.397919237613678
+  },
+  {
+    "question": "What is the litter_carbon of planting silvopasture in Alberta?",
+    "true_answer": "3.1 kgC/m2",
+    "model_answer": "3,130 g C m-2",
+    "similarity": 0.6478502750396729
+  },
+  {
+    "question": "What is the aboveground_biomass of planting MP in Tyler County?",
+    "true_answer": "112.4 MgBM/ha",
+    "model_answer": "What is the aboveground biomass of planting MP in Tyler County?\n\nAnswer: Not found in provided excerpts.",
+    "similarity": 0.4380391836166382
+  },
+  {
+    "question": "What is the aboveground_biomass_wood of planting monoculture plantation in Namipoza?",
+    "true_answer": "3.4 t/ha",
+    "model_answer": "A. auriculiformis | 18.9 |",
+    "similarity": 0.31785038113594055
+  },
+  {
+    "question": "What is the litter_carbon of planting other multistrata in Tome\u0301-Ac\u0327u?",
+    "true_answer": "3.23 MgC/ha",
+    "model_answer": "What is the litter_carbon of planting other multistrata in Tome\u0301-Ac\u0327u?\n\nAnswer not found in provided excerpts.",
+    "similarity": 0.3375777006149292
+  },
+  {
+    "question": "What is the aboveground_carbon of planting riparian buffer strips in Magog?",
+    "true_answer": "22.4 MgC/ha",
+    "model_answer": "26.0 g/kg",
+    "similarity": 0.6272033452987671
+  },
+  {
+    "question": "What is the SOC  of planting cropland  in Sefo/AdiBereto/Kita?",
+    "true_answer": "93.2 MgC/ha",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.39671453833580017
+  },
+  {
+    "question": "What is the SOC_change of planting plantation in mid-West?",
+    "true_answer": "-26.2 MgC/ha",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.4079761505126953
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting parkland in Plateau central, Sapon\u00e9 1?",
+    "true_answer": "5.3 g/kg",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.35755497217178345
+  },
+  {
+    "question": "What is the aboveground_biomass of planting MP in Klosterhede State Forest?",
+    "true_answer": "130 MgBM/ha",
+    "model_answer": "6.79 tha-1",
+    "similarity": 0.3574809730052948
+  },
+  {
+    "question": "What is the understory_biomass of planting multistrata in CATIE 1?",
+    "true_answer": "27.2 MgBM/ha",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.3962653875350952
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting crop in Research farm of the Department of Forestry, CCS Haryana Agricultural University, Hisar, Haryana?",
+    "true_answer": "0.45912408759124 %",
+    "model_answer": "0.44%",
+    "similarity": 0.8990830183029175
+  },
+  {
+    "question": "What is the litter_carbon of planting cocoa  agroforestry system in Reconcavo?",
+    "true_answer": "27.95 MgC/ha",
+    "model_answer": "14.7% (Silva et al., 2018)",
+    "similarity": 0.47366786003112793
+  },
+  {
+    "question": "What is the belowground_biomass of planting Populus deltoides, Glycine max agrisilviculture in Raipur?",
+    "true_answer": "3.19 Mg/ha",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.3919527530670166
+  },
+  {
+    "question": "What is the aboveground_biomass of planting MP in Nongkhyllem?",
+    "true_answer": "406 MgBM/ha",
+    "model_answer": "Based on the provided excerpts, I couldn't find the specific value for aboveground biomass of MP planting in Nongkhyllem. Therefore, I answer:\n\n\"Answer not found in provided excerpts.\"",
+    "similarity": 0.43874257802963257
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting fallow in Bungo-Tebo?",
+    "true_answer": "4.66 percent",
+    "model_answer": "15%",
+    "similarity": 0.7014237642288208
+  },
+  {
+    "question": "What is the aboveground_biomass of planting MP in Natural Pinus sylvestris stand?",
+    "true_answer": "147 MgBM/ha",
+    "model_answer": "37.69 tha -1",
+    "similarity": 0.42383694648742676
+  },
+  {
+    "question": "What is the total soil organic carbon of planting forest in Cauquenes?",
+    "true_answer": "68.6 SOC/t per 10^3 t soil ha-1\nha\n\u20131\nper\nt soil",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.3994784653186798
+  },
+  {
+    "question": "What is the aboveground_biomass of planting alley cropping with short rotation coppices in Helmstedt?",
+    "true_answer": "2.98 MgBM/ha",
+    "model_answer": "3.9 t/ha",
+    "similarity": 0.6999934911727905
+  },
+  {
+    "question": "What is the total soil organic carbon of planting degraded in Sidi Yahya-Gharb?",
+    "true_answer": "5.77 MgC/ha",
+    "model_answer": "5.77 Mg ha-1",
+    "similarity": 0.8144901990890503
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting intercropping in Dornburg, Wendhausen, Forst?",
+    "true_answer": "17.7 mg/g",
+    "model_answer": "7.8%",
+    "similarity": 0.49281442165374756
+  },
+  {
+    "question": "What is the aboveground_biomass of planting intercropping in Hetian?",
+    "true_answer": "9678 kg/ha",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.35777151584625244
+  },
+  {
+    "question": "What is the aboveground_carbon of planting secondary forest in Kapuas Hulu?",
+    "true_answer": "110.7 MgC/ha",
+    "model_answer": "145.6 Mg/ha",
+    "similarity": 0.8088380098342896
+  },
+  {
+    "question": "What is the aboveground_biomass of planting riparian buffer in University of Missouri Greenley Memorial Research Center?",
+    "true_answer": "48.4 kgBM/ha",
+    "model_answer": "100 kg\u00b7ha-1",
+    "similarity": 0.5663836002349854
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting crop in Agroforestry Research Centre (AFRC), Govind Ballabh Pant University of Agriculture and Technology?",
+    "true_answer": "0.91 percent",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.47079506516456604
+  },
+  {
+    "question": "What is the total soil organic carbon of planting short-rotation coppice in POPFULL?",
+    "true_answer": "1.43 kg/m2",
+    "model_answer": "\"52.3 t/ha\"",
+    "similarity": 0.4397893249988556
+  },
+  {
+    "question": "What is the litter_biomass of planting alnus cardamom intercropping in Kabi/Thekabong/Sumik?",
+    "true_answer": "14.67 MgBM/ha",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.38976889848709106
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting improved fallow in Central Kisa, Butere-Mumias District?",
+    "true_answer": "2.36 percent",
+    "model_answer": "0.81%",
+    "similarity": 0.9370895624160767
+  },
+  {
+    "question": "What is the understory_biomass of planting Shifting cultivation with maintance of selected few tree species from one clearing to another in Lelouma?",
+    "true_answer": "7.4 MgBM/ha",
+    "model_answer": "7.7 a",
+    "similarity": 0.5777971744537354
+  },
+  {
+    "question": "What is the total soil organic carbon of planting intercropping in Ambodimanga II?",
+    "true_answer": "91.05263 MgC/ha",
+    "model_answer": "8 mg g-1",
+    "similarity": 0.5069876909255981
+  },
+  {
+    "question": "What is the aboveground_biomass + belowground_biomass of planting short rotation silviculture (tree monocrop) in Corrigin/Wickepin?",
+    "true_answer": "5.4 MgBM/ha",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.378815233707428
+  },
+  {
+    "question": "What is the litter_carbon of planting plantation in Universidade Estadual do Sudoeste da Bahia?",
+    "true_answer": "0.651 MgC/ha",
+    "model_answer": "0.63 Mg ha-1",
+    "similarity": 0.8126533031463623
+  },
+  {
+    "question": "What is the belowground_biomass of planting improved fallow in Muange Farm?",
+    "true_answer": "5.194805 MgBM/ha",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.39840197563171387
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting parkland in Sapone?",
+    "true_answer": "6.22 g/kg",
+    "model_answer": "54%",
+    "similarity": 0.3451681435108185
+  },
+  {
+    "question": "What is the total soil organic carbon of planting intercropping in Obera?",
+    "true_answer": "40.4 MgC/ha",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.3877500295639038
+  },
+  {
+    "question": "What is the aboveground_biomass of planting MP in Institute of Forest Genetics?",
+    "true_answer": "69.1580756 MgBM/ha",
+    "model_answer": "Aboveground biomass: 20",
+    "similarity": 0.47647222876548767
+  },
+  {
+    "question": "What is the percentage soil organic matter of planting parkland-far from tree in Kolikoro, Siramana?",
+    "true_answer": "4.07 percent",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.4294589161872864
+  },
+  {
+    "question": "What is the total soil organic carbon of planting Parkland agroforestry with fodder species in Werie Leke?",
+    "true_answer": "12.67 MgC/ha",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.3890463709831238
+  },
+  {
+    "question": "What is the aboveground_biomass of planting MP in Central Netherlands?",
+    "true_answer": "143.2 MgBM/ha",
+    "model_answer": "No value found",
+    "similarity": 0.39855727553367615
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting cropland in Mamlay watershed?",
+    "true_answer": "13 mg/g",
+    "model_answer": "What is the percentage soil organic carbon of planting cropland in Mamlay watershed?\n\nAnswer: 7.8%",
+    "similarity": 0.42069700360298157
+  },
+  {
+    "question": "What is the aboveground_biomass of planting MP in Heishui forestry farm?",
+    "true_answer": "107.817 MgBM/ha",
+    "model_answer": "34.47",
+    "similarity": 0.5237412452697754
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting Alley cropping in IITA Ibadan 5?",
+    "true_answer": "0.45 %",
+    "model_answer": "11.6%",
+    "similarity": 0.8390977382659912
+  },
+  {
+    "question": "What is the total soil organic carbon of planting cropland in Bear Creek?",
+    "true_answer": "62 MgC/ha",
+    "model_answer": "43.5 g/kg",
+    "similarity": 0.617739737033844
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting Fallow land in Hoshiarpur?",
+    "true_answer": "3.575 g/kg",
+    "model_answer": "0.57 %",
+    "similarity": 0.5138598680496216
+  },
+  {
+    "question": "What is the aboveground_biomass of planting intercropping in Dahartsi?",
+    "true_answer": "2662 kgBM/ha",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.40673959255218506
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting very low volume forest in Vinh Linh district?",
+    "true_answer": "3.39 percent",
+    "model_answer": "4.2%",
+    "similarity": 0.8510807752609253
+  },
+  {
+    "question": "What is the aboveground_biomass of planting intercropping in ICRAF?",
+    "true_answer": "14.57361 MgBM/ha",
+    "model_answer": "Answer: 1.29 kg ha-1",
+    "similarity": 0.6246811151504517
+  },
+  {
+    "question": "What is the understory_carbon of planting Agroforestry systems (AFS) consisting of the association of \"cacao\" Theobroma cacao L. with forest species, mainly with \"guaba\" Inga edulis L. and \"bolaina\" Guazuma crinita C. Martius. in Jos\u00e9 Crespo y Castillo?",
+    "true_answer": "0.38 MgC/ha",
+    "model_answer": "Answer:\n3.46 Mg C ha-1",
+    "similarity": 0.7661342620849609
+  },
+  {
+    "question": "What is the aboveground_biomass of planting monoculture plantation in Central Soil Salinity Research Institute?",
+    "true_answer": "76 kgBM/tree",
+    "model_answer": "61.4 Mg/ha",
+    "similarity": 0.3678980767726898
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting Fallow under weed representing natural fallow-farmer practice in CSIR, Nyankpala?",
+    "true_answer": "0.53 percent",
+    "model_answer": "\"7.16%\"",
+    "similarity": 0.7713069915771484
+  },
+  {
+    "question": "What is the understory_carbon of planting shade-grown coffee in Experimental Farm of the Agricultural Research Institute of Minas Gerais (EPAMIG)?",
+    "true_answer": "2.83 kgC/tree",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.37110260128974915
+  },
+  {
+    "question": "What is the understory_carbon_ensete of planting home garden in Hawassa Zuria - high elevation?",
+    "true_answer": "0.09 MgC/ha",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.3744960427284241
+  },
+  {
+    "question": "What is the total soil organic carbon of planting pasture in EPAMIG?",
+    "true_answer": "4.14 MgC/ha",
+    "model_answer": "0.26 Mg ha-1",
+    "similarity": 0.7757432460784912
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting fodder bank in NaFORRI?",
+    "true_answer": "15.4 g/kg",
+    "model_answer": "16.8%",
+    "similarity": 0.49592125415802
+  },
+  {
+    "question": "What is the total soil organic carbon of planting PA in Hacienda La Pacifica?",
+    "true_answer": "64.1 MgC/ha",
+    "model_answer": "145 Mg ha^-1",
+    "similarity": 0.6523184776306152
+  },
+  {
+    "question": "What is the aboveground_carbon of planting coffee agroforestry in Xalapa-Coatepec?",
+    "true_answer": "73.27 MgC/ha",
+    "model_answer": "73.27 Mg C ha -1",
+    "similarity": 0.8223738670349121
+  },
+  {
+    "question": "What is the aboveground_biomass of planting MP in Afrensu Brohuma Forest Reserve?",
+    "true_answer": "76.5 MgBM/ha",
+    "model_answer": "56.38 tha-1",
+    "similarity": 0.4529094099998474
+  },
+  {
+    "question": "What is the total soil organic carbon of planting monoculture plantation - before planting in Rampur/Anandgoan/Kusumi?",
+    "true_answer": "10.73 MgC/ha",
+    "model_answer": "21.22 Mg ha-1",
+    "similarity": 0.7271970510482788
+  },
+  {
+    "question": "What is the aboveground_carbon of planting monoculture and cacao in Bantaeng?",
+    "true_answer": "8.99 MgC/ha",
+    "model_answer": "32.07 t/ha",
+    "similarity": 0.6278440952301025
+  },
+  {
+    "question": "What is the understory_carbon_grass of planting monoculture plantation in Vicosa?",
+    "true_answer": "3.3 MgC/ha",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.3736473023891449
+  },
+  {
+    "question": "What is the SOC_250_54um of planting native forest in CATIE 1?",
+    "true_answer": "8.9 MgC/ha",
+    "model_answer": "47.9 t/m\u00b2",
+    "similarity": 0.46470949053764343
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting cropland in Amalla?",
+    "true_answer": "0.45 percent",
+    "model_answer": "0.34%",
+    "similarity": 0.9425039887428284
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting cropland in Khanikhola?",
+    "true_answer": "1.57 percent",
+    "model_answer": "0.56%",
+    "similarity": 0.9454350471496582
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting outside tree in Prosopis juliflora?",
+    "true_answer": "0.5 percent",
+    "model_answer": "Answer: 34%",
+    "similarity": 0.8557010293006897
+  },
+  {
+    "question": "What is the aboveground_biomass of planting native species plantation in Pontal do Paranapanema?",
+    "true_answer": "21.5 MgBM/ha",
+    "model_answer": "Aboveground biomass of planting native species plantation in Pontal do Paranapanema:\n75.80 Mg ha-1",
+    "similarity": 0.5461421012878418
+  },
+  {
+    "question": "What is the aboveground_biomass of planting fodder banks in Chrysopigi?",
+    "true_answer": "1386 kgBM/ha",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.4029391407966614
+  },
+  {
+    "question": "What is the understory_biomass of planting improved fallow in Msekera Research Station?",
+    "true_answer": "4.1 MgBM/ha",
+    "model_answer": "0.6 Mg ha-1",
+    "similarity": 0.7391210794448853
+  },
+  {
+    "question": "What is the aboveground_carbon of planting MP in Caselli?",
+    "true_answer": "150.92 MgC/ha",
+    "model_answer": "0.011 t/ha",
+    "similarity": 0.7260989546775818
+  },
+  {
+    "question": "What is the belowground_biomass of planting intercropping in Dhanauri?",
+    "true_answer": "9.58 MgBM/ha",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.38006868958473206
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting fallow in Badele Zuria/Limu Seka/Omo Nada?",
+    "true_answer": "0.46 percent",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.4646388590335846
+  },
+  {
+    "question": "What is the aboveground_biomass of planting The CcTM is introduced as a modification of terrace farming initiated by government program. Also in this method, the trees are kept as orchard canopy. The farmers prepare flat and narrow stretches of ground (terraces) along the contour line under the trees in old fallows or mature forests (multistrata) in Matupi Township?",
+    "true_answer": "27.8 MgBM/ha",
+    "model_answer": "27.8 Mgha-1",
+    "similarity": 0.8427751064300537
+  },
+  {
+    "question": "What is the litter_biomass of planting agrosilvopastoral system  in CPAA/EMBRAPA?",
+    "true_answer": "487 gBM/m2",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.3502553701400757
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting alley cropping in Chaudhary Charan Singh Haryana Agricultural University?",
+    "true_answer": "0.62 percent",
+    "model_answer": "0.58%",
+    "similarity": 0.967068612575531
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting crop control in University of Missouri Greenley Memorial Research Center?",
+    "true_answer": "19.5 g/kg",
+    "model_answer": "11.71%",
+    "similarity": 0.46610963344573975
+  },
+  {
+    "question": "What is the understory_carbon of planting shade-grown cacao in Bahia?",
+    "true_answer": "10 MgC/ha",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.3618977665901184
+  },
+  {
+    "question": "What is the AGB_change of planting short-rotation woody in Noo?",
+    "true_answer": "660 gBM/tree/yr",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.37375086545944214
+  },
+  {
+    "question": "What is the total soil organic carbon of planting Alley cropping in IITA Ibadan 6?",
+    "true_answer": "10.2 g/kg",
+    "model_answer": "42.1 g kg-1",
+    "similarity": 0.7677145600318909
+  },
+  {
+    "question": "What is the aboveground_biomass of planting chakra in Atacapi?",
+    "true_answer": "64.78 MgBM/ha",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.38098737597465515
+  },
+  {
+    "question": "What is the aboveground_biomass of planting silvopasture in Reedy Creek Research Farm?",
+    "true_answer": "3817.7 kgBM/ha",
+    "model_answer": "3,817.7 kg DM ha-1",
+    "similarity": 0.6102801561355591
+  },
+  {
+    "question": "What is the belowground_biomass of planting biofuel planttion in Hayatnagar Research farm?",
+    "true_answer": "18.63 MgBM/ha",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.3876669406890869
+  },
+  {
+    "question": "What is the understory_carbon of planting sun coffee in San Martin?",
+    "true_answer": "2 MgC/ha",
+    "model_answer": "2.36 Mg C",
+    "similarity": 0.7268376350402832
+  },
+  {
+    "question": "What is the belowground_biomass of planting agrisilvihorticulture in Almora?",
+    "true_answer": "15.9 MgBM/ha",
+    "model_answer": "15.58 tha^{-1}",
+    "similarity": 0.4880811870098114
+  },
+  {
+    "question": "What is the aboveground_carbon of planting food forest in Dartington?",
+    "true_answer": "43.22 MgC/ha",
+    "model_answer": "3.69 Mg C ha-1",
+    "similarity": 0.8000365495681763
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting TI - initial in Balachaur?",
+    "true_answer": "0.26 percent",
+    "model_answer": "Answer: \"0.20 - 0.63\"",
+    "similarity": 0.7633317708969116
+  },
+  {
+    "question": "What is the SOC_change of planting shrubland in Ansai County?",
+    "true_answer": "8.89 MgC/ha",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.3846466541290283
+  },
+  {
+    "question": "What is the aboveground_biomass of planting silvopasture in Matiguas?",
+    "true_answer": "13.5 MgBM/ha",
+    "model_answer": "7.28 Mg Cummings",
+    "similarity": 0.6465469002723694
+  },
+  {
+    "question": "What is the aboveground_carbon of planting homegarden in Thrissur?",
+    "true_answer": "20.68 MgC/ha",
+    "model_answer": "16 Mg/ha",
+    "similarity": 0.8164138793945312
+  },
+  {
+    "question": "What is the understory_carbon of planting silvopasture in Tyrol - abandoned, limestone?",
+    "true_answer": "1.1 MgC/ha",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.35703742504119873
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting grazing land in Soni and Sunja?",
+    "true_answer": "3.01 %",
+    "model_answer": "17%",
+    "similarity": 0.6705042123794556
+  },
+  {
+    "question": "What is the total soil organic carbon of planting TI in Kullu district?",
+    "true_answer": "36.59 MgC/ha",
+    "model_answer": "10.57 %",
+    "similarity": 0.509587287902832
+  },
+  {
+    "question": "What is the total soil organic carbon of planting intercropping pasture in National Cattle Research Center?",
+    "true_answer": "30.14 g/kg",
+    "model_answer": "10.4 t/ha",
+    "similarity": 0.5025895833969116
+  },
+  {
+    "question": "What is the aboveground_biomass + belowground_biomass of planting other multistrata in Mbalmayo Forest Reserve?",
+    "true_answer": "61.08085 MgBM/ha",
+    "model_answer": "423.2 Mg dry wt ha-1",
+    "similarity": 0.6401239633560181
+  },
+  {
+    "question": "What is the aboveground_biomass of planting MP in Cubuy Tract (Luquillo Experimental Forest)?",
+    "true_answer": "160.357 MgBM/ha",
+    "model_answer": "Aboveground biomass of planting MP in Cubuy Tract (Luquillo Experimental Forest): Answer not found in provided excerpts.",
+    "similarity": 0.3789295256137848
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting crop in V\u00e9z\u00e9nobres?",
+    "true_answer": "1.6 percent",
+    "model_answer": "1.5%",
+    "similarity": 0.9617842435836792
+  },
+  {
+    "question": "What is the total soil organic carbon of planting Cropland in Greenly Memorial Research Center Knox County?",
+    "true_answer": "1.85 kgC/m2",
+    "model_answer": "Since the question is \"What is the total soil organic carbon of planting Cropland in Greenly Memorial Research Center Knox County?\", there is no mention of Greenly Memorial Research Center Knox County in the excerpts provided. Therefore, the answer is: \"Answer not found in provided excerpts.\"",
+    "similarity": 0.34163951873779297
+  },
+  {
+    "question": "What is the belowground_biomass of planting woodlot in Petit Bouake/Mafia?",
+    "true_answer": "71.1 MgBM/ha",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.3831610083580017
+  },
+  {
+    "question": "What is the belowground_carbon of planting Plum orchard in Herefordshire 7?",
+    "true_answer": "2.3 MgC/ha",
+    "model_answer": "17.47 t/ha",
+    "similarity": 0.6425962448120117
+  },
+  {
+    "question": "What is the understory_carbon of planting banana and plantains in Ocosito?",
+    "true_answer": "1.1 MgC/ha",
+    "model_answer": "15 t C ha-1",
+    "similarity": 0.6796117424964905
+  },
+  {
+    "question": "What is the aboveground_carbon of planting MP in Balmoral Forest?",
+    "true_answer": "31.87 MgC/ha",
+    "model_answer": "6.478 t/ha",
+    "similarity": 0.715565025806427
+  },
+  {
+    "question": "What is the total soil organic carbon of planting not agroforestry in Alberta agricultural lands?",
+    "true_answer": "77.4 MgC/ha",
+    "model_answer": "8 Mg ha-1 y-1",
+    "similarity": 0.6140827536582947
+  },
+  {
+    "question": "What is the total soil organic carbon of planting Jatropha plantation in Banaras Hindu University?",
+    "true_answer": "865.1408 g/m2",
+    "model_answer": "Answer: Not found in provided excerpts.",
+    "similarity": 0.38438451290130615
+  },
+  {
+    "question": "What is the total soil organic carbon of planting control in ICAR-Indian Institute of Soil and Water Conservation (IISWC) Sunabeda?",
+    "true_answer": "12.4 MgC/ha",
+    "model_answer": "12.5 Mg ha^-1",
+    "similarity": 0.8229120373725891
+  },
+  {
+    "question": "What is the total soil organic carbon of planting TI in Prades-le-Lez?",
+    "true_answer": "133.1 MgC/ha",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.3831215500831604
+  },
+  {
+    "question": "What is the aboveground_biomass of planting short-rotation coppice in P\u00f5lva County?",
+    "true_answer": "15.86 MgBM/ha",
+    "model_answer": "Aboveground biomass of planting short-rotation coppice in P\u00f5lva County: 80.44 tha-1 (Article 2: \"Populus deltoides + Lemon grass\" treatement)",
+    "similarity": 0.3001039922237396
+  },
+  {
+    "question": "What is the belowground_biomass of planting monoculture plantation in Jhansi?",
+    "true_answer": "18.74 MgBM/ha",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.3860826790332794
+  },
+  {
+    "question": "What is the total soil organic carbon of planting woodland in Wabe River catchment?",
+    "true_answer": "97.8 MgC/ha",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.3840140998363495
+  },
+  {
+    "question": "What is the total soil organic carbon of planting C in Gilan 1?",
+    "true_answer": "11.46 kg 100 kg-1",
+    "model_answer": "1.6 g kg-1",
+    "similarity": 0.7681134939193726
+  },
+  {
+    "question": "What is the aboveground_carbon of planting MP in Escanaba?",
+    "true_answer": "24.6 MgC/ha",
+    "model_answer": "Aboveground_carbon of planting MP in Escanaba: 20.61 Mg C ha -1",
+    "similarity": 0.5847641825675964
+  },
+  {
+    "question": "What is the aboveground_biomass of planting MP in Hilo?",
+    "true_answer": "133 MgBM/ha",
+    "model_answer": "13.69 tha-1",
+    "similarity": 0.4059711694717407
+  },
+  {
+    "question": "What is the aboveground_carbon of planting forest in Asukese?",
+    "true_answer": "253.089 MgC/ha",
+    "model_answer": "43.52 t/ha",
+    "similarity": 0.7136999368667603
+  },
+  {
+    "question": "What is the litter_carbon of planting Vochysia plantation in Sarapiqui?",
+    "true_answer": "1.64 MgC/ha",
+    "model_answer": "1,000 g mn2",
+    "similarity": 0.5887022018432617
+  },
+  {
+    "question": "What is the aboveground_carbon + belowground_carbon of planting orchard in Degraded ravine?",
+    "true_answer": "2.61 MgC/ha",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.38640642166137695
+  },
+  {
+    "question": "What is the aboveground_biomass of planting Agroforest in Nunukan?",
+    "true_answer": "72.6 MgBM/ha",
+    "model_answer": "37.7 Mg ha-1",
+    "similarity": 0.744792640209198
+  },
+  {
+    "question": "What is the aboveground_biomass of planting Acacia agroforestry system in Mampu?",
+    "true_answer": "240.1 MgBM/ha",
+    "model_answer": "38.1 mg ha-1",
+    "similarity": 0.753270149230957
+  },
+  {
+    "question": "What is the aboveground_biomass of planting intercropping in BARC?",
+    "true_answer": "5862.069 kgBM/ha",
+    "model_answer": "5.7 Mg ha-1",
+    "similarity": 0.579230546951294
+  },
+  {
+    "question": "What is the aboveground_biomass of planting improved fallow, intercropping in western Kenya?",
+    "true_answer": "11.46 MgBM/ha",
+    "model_answer": "Answer not found in provided excerpts.",
+    "similarity": 0.38502585887908936
+  },
+  {
+    "question": "What is the aboveground_carbon of planting MP in La Selva 1?",
+    "true_answer": "26.1 MgC/ha",
+    "model_answer": "What is the aboveground carbon of planting MP in La Selva 1?\n\nAnswer not found in provided excerpts.",
+    "similarity": 0.4256294369697571
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting Fallow in Indian Council of Agriculture Research (ICAR) Northeast Hill (NEH)?",
+    "true_answer": "1.080745342 g/100g",
+    "model_answer": "1.5 %",
+    "similarity": 0.616797924041748
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting Alleycropping (N fixing) in KARI, Katumani (ICRAF Machakos)?",
+    "true_answer": "0.88 percent",
+    "model_answer": "9.4%",
+    "similarity": 0.8919004797935486
+  },
+  {
+    "question": "What is the percentage soil organic matter of planting crop in Conc\u00f3rdia?",
+    "true_answer": "14.3 g/kg",
+    "model_answer": "5.6%",
+    "similarity": 0.4644336700439453
+  },
+  {
+    "question": "What is the aboveground_biomass of planting crop in Agroforestry Research Block, AICRP on Agroforestry?",
+    "true_answer": "0 MgBM/ha",
+    "model_answer": "51.0 t/ha",
+    "similarity": 0.6109679937362671
+  },
+  {
+    "question": "What is the SOC_change of planting shelterbelt in Saskatchewan?",
+    "true_answer": "44.9 MgC/ha",
+    "model_answer": "\u22120.4 t C/ha",
+    "similarity": 0.6656200885772705
+  },
+  {
+    "question": "What is the CWD_biomass + litter_biomass of planting woodland in Ekiti State?",
+    "true_answer": "5.88 MgBM/ha",
+    "model_answer": "40.41",
+    "similarity": 0.4882615804672241
+  },
+  {
+    "question": "What is the belowground_biomass of planting shade-grown coffee in Cafetalera Aquiare?",
+    "true_answer": "18.34 MgBM/ha",
+    "model_answer": "15 t ha-1",
+    "similarity": 0.5668798685073853
+  },
+  {
+    "question": "What is the overstory_biomass of planting shade-grown cacao in Kedia/Talba?",
+    "true_answer": "70.3 kgBM/tree",
+    "model_answer": "The overstory biomass of planting shade-grown cacao in Kedia/Talba is not found in the provided excerpts.",
+    "similarity": 0.3823155164718628
+  },
+  {
+    "question": "What is the aboveground_carbon of planting MP in Liangshui National Nature Reserve?",
+    "true_answer": "77.1 MgC/ha",
+    "model_answer": "5.98 t/ha",
+    "similarity": 0.7259923219680786
+  },
+  {
+    "question": "What is the SOC  of planting shelterbelt in Yakovlevskii?",
+    "true_answer": "22.48 MgC/ha",
+    "model_answer": "1.74 g/kg",
+    "similarity": 0.5959042906761169
+  },
+  {
+    "question": "What is the aboveground_biomass of planting sugarcane-cassava in Khlong Yai?",
+    "true_answer": "22.83 MgBM/ha",
+    "model_answer": "0 \u00b7 21 b",
+    "similarity": 0.4984498620033264
+  },
+  {
+    "question": "What is the belowground_biomass of planting intercropping in Indira Gandhi Agricultural University?",
+    "true_answer": "5.9 MgBM/ha",
+    "model_answer": "3.90 Mg ha",
+    "similarity": 0.7745515704154968
+  },
+  {
+    "question": "What is the aboveground_carbon of planting silvopasture in Kanatal?",
+    "true_answer": "30.8 MgC/ha",
+    "model_answer": "53.14 Mg ha-1",
+    "similarity": 0.7584347724914551
+  },
+  {
+    "question": "What is the aboveground_biomass of planting DP in Site 1493?",
+    "true_answer": "66.96000000000001 MgBM/ha",
+    "model_answer": "23.26 tha-1",
+    "similarity": 0.4464581310749054
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting agricultural in Madarihat, Jalpaiguri District?",
+    "true_answer": "1.16 percent",
+    "model_answer": "11%",
+    "similarity": 0.7419864535331726
+  },
+  {
+    "question": "What is the belowground_carbon of planting oil palm plantation in Harapan Forest Jambi?",
+    "true_answer": "362.53 gC/m2",
+    "model_answer": "A: \"Answer not found in provided excerpts.\"",
+    "similarity": 0.3132748007774353
+  },
+  {
+    "question": "What is the total soil organic carbon of planting Hedgerow in Heuvelland?",
+    "true_answer": "46.2963 MgC/ha",
+    "model_answer": "9.8%",
+    "similarity": 0.5104813575744629
+  },
+  {
+    "question": "What is the understory_biomass_banana of planting banana monoculture in Mpigi District?",
+    "true_answer": "52.2 MgBM/ha",
+    "model_answer": "4.23 t/ha",
+    "similarity": 0.689965009689331
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting tree monocrop in Pehuen-co?",
+    "true_answer": "1.7 percent",
+    "model_answer": "14.3%",
+    "similarity": 0.872782826423645
+  },
+  {
+    "question": "What is the percentage soil organic matter of planting crop in Baidong Village?",
+    "true_answer": "7.28 g/kg",
+    "model_answer": "6.2%",
+    "similarity": 0.47581222653388977
+  },
+  {
+    "question": "What is the understory_carbon of planting home garden in Tawang?",
+    "true_answer": "1.62 MgC/ha",
+    "model_answer": "0.8 Mg/ha",
+    "similarity": 0.8899651169776917
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting Parklands in Central Rift Valley?",
+    "true_answer": "11.03 g/kg",
+    "model_answer": "13%",
+    "similarity": 0.4343104362487793
+  },
+  {
+    "question": "What is the percentage soil organic carbon of planting cropland in Gulzow?",
+    "true_answer": "6.7 mg/g",
+    "model_answer": "8.4%",
+    "similarity": 0.489560604095459
+  }
+]
