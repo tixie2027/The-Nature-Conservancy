@@ -214,16 +214,36 @@ Q: "What is the carbon sequestration of Acacia Senegal in Mbeere?"
 A: "Answer not found in provided excerpts."
 
 """
+
     if benchmarking:
         system_prompt = "Always respond with **only** the **numerical value and unit**. No explanations or no extra text." + system_prompt
 
     print(colored(relevant_excerpts,"blue"))
+
+    messages = []
+    messages.append({"role": "system", "content": system_prompt})
+    # open the questions folder and list all the files
+    questions_dir = os.path.join(os.path.dirname(__file__), "questions")
+    question_files = os.listdir(questions_dir)
+    answer_dir = os.path.join(os.path.dirname(__file__), "answers")
+    answer_files = os.listdir(answer_dir)
+    question_files = [os.path.join(questions_dir, f) for f in question_files if f.endswith('.txt')]
+    answer_files = [os.path.join(answer_dir, f) for f in answer_files if f.endswith('.txt')]
+    for i in range(len(question_files)):
+        # open the file
+        with open(question_files[i]) as f:
+            messages.append({"role": "user", "content": f.read()})
+        with open(answer_files[i]) as f:
+            messages.append({"role": "assistant", "content": f.read()})
+
+
+    messages.append({"role": "user", "content": f"User Question: {user_question}\n\nRelevant Excerpts:\n\n{relevant_excerpts}"})
+
+    print(colored("\n\nMessages:\n", "green"))
+    print(messages)
     chat_completion = client.chat.completions.create(
         model=model,
-        messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": f"User Question: {user_question}\n\nRelevant Excerpts:\n\n{relevant_excerpts}"}
-        ]
+        messages=messages
     )
 
     return chat_completion.choices[0].message.content
@@ -264,7 +284,7 @@ def main():
         if not user_question:
             continue
         q_vec = embedding_function.embed_query(user_question) 
-        #path_to_articles = "/Users/sharm51155/Downloads/completed JSONs"
+#path_to_articles = ""
         path_to_articles =  os.getenv("path_to_articles")
         excerpts = get_relevant_excerpts(user_question, q_vec, embedding_function, metadata, path_to_articles)
         context = rerank_context_per_article(excerpts, user_question,
