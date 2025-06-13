@@ -15,6 +15,9 @@ from sentence_transformers import SentenceTransformer
 from nltk.tokenize import sent_tokenize
 from sklearn.metrics.pairwise import cosine_similarity
 
+from transformers import AutoTokenizer
+nltk.download("punkt")
+
 # OLD ARTICLE PICKER:
 
 # def get_relevant_excerpts(user_question, docsearch):
@@ -137,12 +140,25 @@ def rerank_context_per_article(articles, query, sentences_per_article, embed_mod
     print("\n\n".join(blocks))
     return "\n\n".join(blocks)    
 
-def chunk_document(text):
-    """
-    Chunk documents by using basic tokenizer
-    """
-    sentences = sent_tokenize(text)
-    return sentences
+def chunk_document(text, max_tokens=510):
+    tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+    chunks, current_chunk = [], []
+    
+    for sentence in sent_tokenize(text):
+        tentative_chunk = " ".join(current_chunk + [sentence])
+        token_ids = tokenizer.encode(tentative_chunk, truncation=False, add_special_tokens=True, max_length = max_tokens)
+        
+        if len(token_ids) > max_tokens:
+            if current_chunk:
+                chunks.append(" ".join(current_chunk))
+            current_chunk = [sentence]
+        else:
+            current_chunk.append(sentence)
+
+    if current_chunk:
+        chunks.append(" ".join(current_chunk))
+
+    return chunks
 
 def embed_texts(texts, model):
     """
