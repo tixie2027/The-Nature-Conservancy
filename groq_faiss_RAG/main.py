@@ -141,20 +141,55 @@ def rerank_context_per_article(articles, query, sentences_per_article, embed_mod
     return "\n\n".join(blocks)    
 
 def chunk_document(text, max_tokens=510):
-    tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+    max_chars = max_tokens * 3
     chunks, current_chunk = [], []
+    sentences = sent_tokenize(text)
+    i = 0
     
-    for sentence in sent_tokenize(text):
-        tentative_chunk = " ".join(current_chunk + [sentence])
-        token_ids = tokenizer.encode(tentative_chunk, truncation=False, add_special_tokens=True, max_length = max_tokens)
+    while i < len(sentences):
+        sentence = sentences[i]
         
-        if len(token_ids) > max_tokens:
+        # check if this sentence starts a table
+        if '|' in sentence and sentence.strip().startswith('|'):
+            table_rows = []
+            j = i
+            
+            # finding all table rows
+            while j < len(sentences) and '|' in sentences[j] and sentences[j].strip().startswith('|'):
+                table_rows.append(sentences[j])
+                j += 1
+            
+            complete_table = '\n'.join(table_rows)
+            test_chunk = " ".join(current_chunk + [complete_table])
+
+            # checking if goes over char limit
+            if len(test_chunk) > max_chars:
+                if current_chunk:
+                    chunks.append(" ".join(current_chunk))
+                    current_chunk = []
+                
+                # checking if table goes over limit
+                if len(complete_table) > max_chars:
+                    chunks.append(complete_table)
+                else:
+                    current_chunk = [complete_table]
+            # under limit
+            else:
+                current_chunk.append(complete_table)
+
+            i = j
+            continue
+        #Below is for when the sentence isn't a table
+        test_chunk = " ".join(current_chunk + [sentence])
+        if len(test_chunk) > max_chars:
             if current_chunk:
                 chunks.append(" ".join(current_chunk))
             current_chunk = [sentence]
         else:
             current_chunk.append(sentence)
+        i += 1
 
+    # adding back anything left in the current chunk
     if current_chunk:
         chunks.append(" ".join(current_chunk))
 
