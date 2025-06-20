@@ -1,12 +1,12 @@
 from dotenv import load_dotenv
 load_dotenv()
+import re
 from groq import Groq
 import json
 from pathlib import Path
 from termcolor import colored
 import spacy
 import nltk
-
 import numpy as np
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
@@ -14,9 +14,9 @@ import os
 from sentence_transformers import SentenceTransformer
 from nltk.tokenize import sent_tokenize
 from sklearn.metrics.pairwise import cosine_similarity
-
-from transformers import AutoTokenizer
 nltk.download("punkt")
+
+hugging_face_key = os.getenv("HUGGINGFACE_HUB_TOKEN")
 
 # OLD ARTICLE PICKER:
 
@@ -81,8 +81,6 @@ def get_relevant_excerpts(query,q_vec,embedding_function,metadata,folder_of_json
         
         print(colored(f"Filtered from {len(metadata) + len(articles_to_remove)} to {len(metadata)} articles", "green"))
 
-        
-
     
     ## KEY WORDS
     for filename, meta in metadata.items():  
@@ -140,8 +138,8 @@ def rerank_context_per_article(articles, query, sentences_per_article, embed_mod
     print("\n\n".join(blocks))
     return "\n\n".join(blocks)    
 
-def chunk_document(text, max_tokens=510):
-    tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+def chunk_document(text, max_tokens=400):
+    tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased",token=hugging_face_key)
     chunks, current_chunk = [], []
     
     for sentence in sent_tokenize(text):
@@ -264,19 +262,118 @@ A: "Answer not found in provided excerpts."
 
     return chat_completion.choices[0].message.content
 
+def flatten_article_text(article_json):
+    """
+    Extract only relevant textual content from nested JSON structure.
+    """
+    text_blocks = []
+
+    def recursive_extract(obj):
+        if isinstance(obj, dict):
+            for k, v in obj.items():
+                if isinstance(v, (dict, list)):
+                    recursive_extract(v)
+                elif isinstance(v, str):
+                    text_blocks.append(v)
+        elif isinstance(obj, list):
+            for item in obj:
+                recursive_extract(item)
+
+    recursive_extract(article_json)
+    return "\n".join(text_blocks)
+
+import re
+from nltk.tokenize import sent_tokenize
+
+
+
+def get_numerical_chunks_from_articles(excerpts):
+    """
+    Extract and return simple contextual numerical chunks from each article excerpt.
+    """
+    numeric_chunks = []
+    number_pattern = re.compile(r'\d+(\.\d+)?')
+
+    for art in excerpts:
+        try:
+            text = art["text"]  # Use as raw string, no JSON parsing
+            
+            for match in number_pattern.finditer(text):
+                start = max(0, match.start() - 200)
+                end = min(len(text), match.end() + 200)
+                chunk = text[start:end].strip()
+                numeric_chunks.append(f'{art["label"]}:\n{chunk}')
+        
+        except Exception as e:
+            print(f"Failed to process article {art['label']}: {e}")
+            continue
+
+    print(colored(f"\n\nExtracted {len(numeric_chunks)} numeric chunks.\n", "green"))
+    with open("numeric_chunks.txt", "w") as f:
+        for chunk in numeric_chunks:
+            f.write(chunk + "\n\n")
+    return "\n\n".join(numeric_chunks)
+
+def get_text_chunks_from_articles(client, model, excerpts, user_question, sentences_per_article, embedding_function):
+    """
+    Generate text chunks from articles based on the user question.
+    """
+    embedded_question = embedding_function.embed_query(user_question)
+    context = []
+
+    for i in range(len(excerpts)):
+        article = excerpts[i]["text"] 
+        prompt = f"""You are an expert assistant for interpreting scientific research on agroforestry and carbon sequestration. Check whether the following article contains information relevant to the question: {user_question}.
+        If it does, return the first {sentences_per_article} sentences that are relevant to the question. If it does not, return "Answer not found in provided excerpts". Assume that the articles are talking about the same location as the question. ONLY return the sentences, no extra text, no explanation, no interpretation, no commentary."
+        {article}
+        """ 
+        # cut references from prompt
+        if "References" in prompt:
+            prompt = prompt.split("References")[0]
+        
+        # cut to first 6000 characters
+        if len(prompt) > 6000:
+            print(colored(f"Prompt too long ({len(prompt)} characters), truncating to 6000 characters.", "red"))
+            prompt = prompt[:6000]
+        
+        response = client.chat.completions.create(
+            model=model,
+            messages=[
+                {"role": "user", "content": prompt}
+            ]
+        )
+        
+        print(colored("\n\nResponse:\n", "green"))
+        print(response.choices[0].message.content)
+        context.append(response.choices[0].message.content)
+
+    return context
+
+def get_chunks_from_articles(client, model,excerpts, user_question,sentences_per_article,embedding_function,type_question):
+    if type_question == "num":
+        print(colored("Numerical question detected, using numerical response generation.", "green"))
+        return get_numerical_chunks_from_articles(excerpts)
+    elif type_question == "text":
+        print(colored("Text question detected, using text response generation.", "green"))
+        return get_text_chunks_from_articles(client, model, excerpts, user_question, sentences_per_article, embedding_function)
+    else:
+        print(colored("Invalid type_question, defaulting to text response generation.", "red"))
+        type_question = "text"
+        get_text_chunks_from_articles(client, model, excerpts, user_question, sentences_per_article, embedding_function)
+   
+
 
 def main():
-    model = "llama3-8b-8192"
+    model = "llama-3.1-8b-instant"
     groq_api_key = os.getenv("GROQ_API_KEY")
-    hugging_face_key = os.getenv("HUGGINGFACE_HUB_TOKEN")
 
     if not groq_api_key:
         raise EnvironmentError("Missing GROQ_API_KEY in environment.")
 
     # Initialize Groq + embedding model
     client = Groq(api_key=groq_api_key)
-    embedding_function = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-
+    embedding_function=HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+    
     # Load FAISS index
     faiss_index = FAISS.load_local(
         "faiss_index",
@@ -287,28 +384,30 @@ def main():
     print("\n🌿 Agroforestry RAG System (Powered by FAISS + Groq)")
     print("Ask a question related to carbon stocks, sequestration, soil data, or agroforestry studies.\n")
     
-    embed_model = SentenceTransformer("sentence-transformers/multi-qa-mpnet-base-dot-v1", token=hugging_face_key)
+    embed_model = SentenceTransformer("sentence-transformers/multi-qa-mpnet-base-dot-v1")
 
     while True:
         with open("metadata.json", "r") as f:
             metadata = json.load(f)
         for filename, meta in metadata.items():  
             meta["score"] = 0
-
+        type_question = input(colored("Type 'num' if your question needs a numerical answer or 'text' if it needs a text answer: ", "yellow")).strip().lower()
         user_question = input(colored("🔎 Your question: ", "yellow")).strip()
 
         if not user_question:
             continue
         q_vec = embedding_function.embed_query(user_question) 
-#path_to_articles = ""
         path_to_articles =  os.getenv("path_to_articles")
+        # get the correct articles
         excerpts = get_relevant_excerpts(user_question, q_vec, embedding_function, metadata, path_to_articles)
-        context = rerank_context_per_article(excerpts, user_question,
-                                     sentences_per_article=6,
-                                     embed_model=embed_model)
+        # get the right chunks from the articles
+        context = get_chunks_from_articles(client, model,excerpts, user_question, sentences_per_article=6, embedding_function=embedding_function,type_question=type_question)
+        # context = rerank_context_per_article(excerpts, user_question,
+        #                              sentences_per_article=6,
+        #                              embed_model=embed_model)
 
-        response = generate_response(client, model, user_question, context, benchmarking = False)
-        print(colored("\n Answer:\n" + response + "\n", "magenta"))
+        # response = generate_response(client, model, user_question, context, benchmarking = False)
+        # print(colored("\n Answer:\n" + response + "\n", "magenta"))
 
 
 
