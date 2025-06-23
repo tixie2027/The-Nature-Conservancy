@@ -11,6 +11,31 @@ from dotenv import load_dotenv
 from groq import Groq
 import random
 
+def similarity_score(model_response, answer, model, client):
+    if model_response == "Answer not found in provided excerpts.":
+        return 0
+    
+    similarity = client.chat.completions.create(
+        model = model,
+        messages = [
+            {
+                "role": "system", "content" : f"""Given this value: {model_response} and this value: {answer}. Give
+                a score to how similar they are on a range of 0.00 - 1.00. If these two values are in different units, convert to the same unit first
+                then compare. ONLY output the similarity score and no other text"""
+            }
+        ]
+    )
+    similarity = similarity.choices[0].message.content
+    print(similarity, type(similarity))
+    try:
+        similarity = float(similarity)
+        return similarity
+    except:
+        print("not successfukl")
+        return 0
+
+
+
 load_dotenv()
 groq_api_key = os.getenv("GROQ_API_KEY")
 client = Groq(api_key=groq_api_key)
@@ -32,8 +57,8 @@ with open("benchmarking.json", "r") as f:
 
 all_questions = list(qa_data .items())
 
-# sample 1/10 of the questions
-sampled_questions = random.sample(all_questions, max(1, len(all_questions) // 10))
+# sample 1/200 of the questions
+sampled_questions = random.sample(all_questions, max(1, len(all_questions) // 200))
 
 path_to_articles =  os.getenv("path_to_articles")
 
@@ -55,12 +80,15 @@ for question, answer_parts in sampled_questions:
     context = rerank_context_per_article(excerpts, question,
                                          sentences_per_article=6,
                                          embed_model=embed_model)
+    
+    if len(context) > 6000: 
+        context = context[:6000]
+
     model_answer = generate_response(client, "llama3-8b-8192", question, context, benchmarking = True)
 
     # response/answer similarity comparison
-    emb_true = embed_model.encode([true_answer])[0]
-    emb_pred = embed_model.encode([model_answer])[0]
-    similarity = cosine_similarity([emb_true], [emb_pred])[0][0]
+    similarity = similarity_score(model_answer, true_answer, "llama3-8b-8192", client)
+    
 
     results.append({
         "question": question,
