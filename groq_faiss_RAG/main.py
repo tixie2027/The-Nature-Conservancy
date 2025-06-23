@@ -1,8 +1,10 @@
 from dotenv import load_dotenv
+from transformers import AutoTokenizer
 load_dotenv()
 import re
 from groq import Groq
 import json
+import ollama
 from pathlib import Path
 from termcolor import colored
 import spacy
@@ -45,8 +47,7 @@ def get_relevant_excerpts(query,q_vec,embedding_function,metadata,folder_of_json
     nlp = spacy.load("en_core_web_sm")
     doc = nlp(query)
     entities = [ent.text for ent in doc.ents if ent.label_ in ["ORG", "PERSON", "GPE", "LOC", "PRODUCT", "NORP", "FAC"]]
-    print(colored("Retrieved extracts:"))
-    print(colored(entities, "blue"))
+
     
     # Only filter if we found entities in the query
     if entities:
@@ -109,9 +110,10 @@ def get_relevant_excerpts(query,q_vec,embedding_function,metadata,folder_of_json
             article_dict = json.load(f)
 
         article_str = json.dumps(article_dict, indent=2, ensure_ascii=False)
-
+        json_title = fname.replace(".json", "")
         relevant_articles.append({
-            "label": f"ARTICLE {rank}",          # or use meta.get("title", …)
+            "label": f"ARTICLE {rank}", 
+            "title": json_title,
             "text":  article_str
         })
 
@@ -135,7 +137,6 @@ def rerank_context_per_article(articles, query, sentences_per_article, embed_mod
 
         block = f'{art["label"]}:\n' + "\n".join(top_k_sents)
         blocks.append(block)
-    print("\n\n".join(blocks))
     return "\n\n".join(blocks)    
 
 def chunk_document(text, max_tokens=400):
@@ -232,7 +233,6 @@ A: "Answer not found in provided excerpts."
     if benchmarking:
         system_prompt = "Always respond with **only** the **numerical value and unit**. No explanations or no extra text." + system_prompt
 
-    print(colored(relevant_excerpts,"blue"))
 
     messages = []
     messages.append({"role": "system", "content": system_prompt})
@@ -253,14 +253,7 @@ A: "Answer not found in provided excerpts."
 
     messages.append({"role": "user", "content": f"User Question: {user_question}\n\nRelevant Excerpts:\n\n{relevant_excerpts}"})
 
-    print(colored("\n\nMessages:\n", "green"))
-    print(messages)
-    chat_completion = client.chat.completions.create(
-        model=model,
-        messages=messages
-    )
-
-    return chat_completion.choices[0].message.content
+    return ollama_chat(client, model, messages)
 
 def flatten_article_text(article_json):
     """
@@ -285,34 +278,73 @@ def flatten_article_text(article_json):
 import re
 from nltk.tokenize import sent_tokenize
 
+def get_tables(excerpts, context_chars: int = 250):
+    print(excerpts[0])
+    """
+    Extract markdown-style tables from `excerpts` and keep `context_chars`
+    characters *before* each table.
+
+    Parameters
+    ----------
+    excerpts : list[dict]
+        Every item looks like {"label": "...", "text": "<raw-json-string>"}.
+    context_chars : int, default 250
+        How many characters of leading context to preserve.
+    """
+    print(colored("\nExtracting tables with context …\n", "green"))
+
+    # ≥2 consecutive lines that both start & end with a vertical bar
+    tbl_pat = re.compile(r'(?:^\s*\|.*?\|\s*(?:\r?\n|\r)){2,}',
+                         re.MULTILINE)
+
+    chunks = []
+
+    for art in excerpts:
+        label = art.get("title", "No Label")
+
+        # ---------- 1. decode the JSON held in "text"
+        try:
+            article = json.loads(art["text"])
+            sections = article.get("sections", [])
+        except Exception as e:
+            print(f"⚠️  {label}: JSON decode failed – {e}")
+            continue
+
+        # ---------- 2. flatten all section content
+        text = "\n".join(
+            ln for sec in sections for ln in sec.get("content", [])
+        )
+
+        # ---------- 3. find every table *with positions*
+        for m in tbl_pat.finditer(text):
+            start, end = m.span()
+
+            # 4. grab `context_chars` before the table
+            ctx_start = max(0, start - context_chars)
+            snippet = text[ctx_start:end].strip()
+
+            # prepend ellipsis if we chopped off the very beginning
+            if ctx_start > 0:
+                snippet = "… " + snippet
+
+            chunks.append(f"{label}:\n{snippet}")
+
+    # ---------- 5. write & return
+    print(colored(f"Extracted {len(chunks)} chunk(s).\n", "green"))
+
+    with open("table_chunks.txt", "w", encoding="utf-8") as fh:
+        fh.write("\n\n".join(chunks))
+
+    print(colored("Saved → table_chunks.txt", "green"))
+    return "\n\n".join(chunks)
 
 
 def get_numerical_chunks_from_articles(excerpts):
     """
     Extract and return simple contextual numerical chunks from each article excerpt.
     """
-    numeric_chunks = []
-    number_pattern = re.compile(r'\d+(\.\d+)?')
-
-    for art in excerpts:
-        try:
-            text = art["text"]  # Use as raw string, no JSON parsing
-            
-            for match in number_pattern.finditer(text):
-                start = max(0, match.start() - 200)
-                end = min(len(text), match.end() + 200)
-                chunk = text[start:end].strip()
-                numeric_chunks.append(f'{art["label"]}:\n{chunk}')
-        
-        except Exception as e:
-            print(f"Failed to process article {art['label']}: {e}")
-            continue
-
-    print(colored(f"\n\nExtracted {len(numeric_chunks)} numeric chunks.\n", "green"))
-    with open("numeric_chunks.txt", "w") as f:
-        for chunk in numeric_chunks:
-            f.write(chunk + "\n\n")
-    return "\n\n".join(numeric_chunks)
+    tables = get_tables(excerpts)
+    return tables
 
 def get_text_chunks_from_articles(client, model, excerpts, user_question, sentences_per_article, embedding_function):
     """
@@ -336,22 +368,19 @@ def get_text_chunks_from_articles(client, model, excerpts, user_question, senten
             print(colored(f"Prompt too long ({len(prompt)} characters), truncating to 6000 characters.", "red"))
             prompt = prompt[:6000]
         
-        response = client.chat.completions.create(
-            model=model,
-            messages=[
-                {"role": "user", "content": prompt}
-            ]
-        )
-        
-        print(colored("\n\nResponse:\n", "green"))
-        print(response.choices[0].message.content)
-        context.append(response.choices[0].message.content)
+        context.append(
+    ollama_chat(
+        client, model,
+        [{"role": "user", "content": prompt}]
+    )
+)
 
     return context
 
 def get_chunks_from_articles(client, model,excerpts, user_question,sentences_per_article,embedding_function,type_question):
     if type_question == "num":
         print(colored("Numerical question detected, using numerical response generation.", "green"))
+        tables = get_tables(excerpts)
         return get_numerical_chunks_from_articles(excerpts)
     elif type_question == "text":
         print(colored("Text question detected, using text response generation.", "green"))
@@ -361,17 +390,25 @@ def get_chunks_from_articles(client, model,excerpts, user_question,sentences_per
         type_question = "text"
         get_text_chunks_from_articles(client, model, excerpts, user_question, sentences_per_article, embedding_function)
    
-
+def ollama_chat(client, model, messages):
+    """
+    Wrapper that mimics the former Groq `.chat.completions.create(...)` call.
+    It returns plain string content so the surrounding code remains unchanged.
+    """
+    resp = client.chat(model=model, messages=messages)
+    return resp["message"]["content"]    
 
 def main():
-    model = "llama-3.1-8b-instant"
+    # model = "llama-3.1-8b-instant"
+    model  = "llama3:8b"
     groq_api_key = os.getenv("GROQ_API_KEY")
 
     if not groq_api_key:
         raise EnvironmentError("Missing GROQ_API_KEY in environment.")
 
     # Initialize Groq + embedding model
-    client = Groq(api_key=groq_api_key)
+    # client = Groq(api_key=groq_api_key)
+    client = ollama.Client(host="http://localhost:11434")
     embedding_function=HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
     
     # Load FAISS index
@@ -391,7 +428,8 @@ def main():
             metadata = json.load(f)
         for filename, meta in metadata.items():  
             meta["score"] = 0
-        type_question = input(colored("Type 'num' if your question needs a numerical answer or 'text' if it needs a text answer: ", "yellow")).strip().lower()
+        # type_question = input(colored("Type 'num' if your question needs a numerical answer or 'text' if it needs a text answer: ", "yellow")).strip().lower()
+        type_question = "num"
         user_question = input(colored("🔎 Your question: ", "yellow")).strip()
 
         if not user_question:
@@ -402,12 +440,14 @@ def main():
         excerpts = get_relevant_excerpts(user_question, q_vec, embedding_function, metadata, path_to_articles)
         # get the right chunks from the articles
         context = get_chunks_from_articles(client, model,excerpts, user_question, sentences_per_article=6, embedding_function=embedding_function,type_question=type_question)
+        
         # context = rerank_context_per_article(excerpts, user_question,
         #                              sentences_per_article=6,
         #                              embed_model=embed_model)
+        
 
-        # response = generate_response(client, model, user_question, context, benchmarking = False)
-        # print(colored("\n Answer:\n" + response + "\n", "magenta"))
+        response = generate_response(client, model, user_question, context, benchmarking = False)
+        print(colored("\n Answer:\n" + response + "\n", "magenta"))
 
 
 

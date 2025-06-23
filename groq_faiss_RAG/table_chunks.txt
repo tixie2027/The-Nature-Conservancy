@@ -1,0 +1,61 @@
+cleaned_Rawana 2020 Carbon stock:
+… eae, Meliaceae , and Sapotaceae. In the taungya, it was composed by Gyrinops versteegii and Tectona grandis with the family of Thymelaeaceae and Verbenaceae respectively (see Table 1).
+Table 1. Plant species found in the three agroforestry practices
+| Common Name | Scientific Name | Family Name |
+|------------------------|---------------------------|---------------|
+| Multilayer Tree Garden | Multilayer Tree Garden | |
+| Gaharu | Gyrinops versteegii | Thymelaeaceae |
+| Jambu | Eugenia aquea | Myrtaceae |
+| Jati | Tectona grandis | Verbenaceae |
+| Kelengkeng | Dimocarpus longan | Sapindaceae |
+| Kemiri | Aleurites moluccana | Euphorbiaceae |
+| Mangga | Mangifera indica | Anacardiaceae |
+| Sawo | Manilkara zapota | Sapotaceae |
+| Sengon | Paraserianthes falcataria | Fabaceae |
+| Home Garden | Home Garden | |
+| Gaharu | Gyrinops versteegii | Thymelaeaceae |
+| Jambu | Eugenia aquea | Myrtaceae |
+| Kedondong | Spondias dulcis | Anacardiaceae |
+| Mahoni | Swietenia macrophylla | Meliaceae |
+| Tanjung | Mimusops elengi | Sapotaceae |
+| Taungya | Taungya | |
+| Gaharu | Gyrinops versteegii | Thymelaeaceae |
+| Jati | Tectona grandis | Verbenaceae |
+
+cleaned_Rawana 2020 Carbon stock:
+… Figure 3b, the percentage of carbon stock stored below the ground hierarchically was taungya practice of 84%>multilayer tree garden of 77%>home garden of 52%.
+Table 2. Carbon stored from the three agroforestry practices in the different carbon pools
+| Carbon Pools | Carbon Stocks (Mg/ha) | Carbon Stocks (Mg/ha) | |
+|-----------------------|-------------------------|-------------------------|------------|
+| | TGY | HMG | MTG |
+| Trees | | | |
+| Big Trees | 1.35 (3%) | 9.59(31%) | 3.63 (8%) |
+| Small Trees | 1.63 (4%) | 1.53 (5%) | 1.86 (4%) |
+| Understory Vegetation | 0.8 (2%) | 1.62 (5%) | 0.01 (0%) |
+| Necromass | 0.43 (1%) | 0.7 (2%) | 1.23 (3%) |
+| Litter | 1.9 (5%) | 1.53 (5%) | 3.212 (7%) |
+| Soil | 32.7 (84%) | 16.44 (52%) | 34.8 (77%) |
+| Total | 38.81 | 31.41 | 44.47 |
+
+cleaned_Rawana 2020 Carbon stock:
+… all tree storing the highest carbon stock was G.versteegii of 1.12 Mg C/ha (68.74%), then T. grandis of 0.51 Mg C/ha (31.25%) (See table 3).
+Table 3. The number of carbon stocks of each species at the multilayer tree garden, taungya, and home garden
+| Land Use | C stock (Mg C/ha ) | | |
+|-------------------|---------------------------|----------------|---------------|
+| | Species | DBH>30 cm | DBH<30cm |
+| Multilayer Garden | Gyrinops versteegii | - | 1.73 (92.46%) |
+| Multilayer Garden | Mangifera indica | - | 0.14 (7.54%) |
+| Multilayer Garden | Eugenia aquea | 0.36 (10.76%) | - |
+| Multilayer Garden | Tectona grandis | 0.75 (22.04 %) | - |
+| Multilayer Garden | Dimocarpus longan | 0.04 (1.21%) | - |
+| Multilayer Garden | Aleurites moluccana | 0.17 (4.48%) | - |
+| Multilayer Garden | Mangifera indica | 0.08 (2.51%) | - |
+| Multilayer Garden | Manilkara zapota | 1.98 (58.50%) | - |
+| Multilayer Garden | Paraserianthes falcataria | 0.005 (0.14%) | - |
+| Home Garden | Gyrinops versteegii | - | 0.56 (36.32%) |
+| Home Garden | Eugenia aquea | - | 0.009 (0.6%) |
+| | Spondias dulcis | 1.24 (12.95%) | - |
+| | Swietenia macrophylla | 0.68 (7.04%) | 0.97 (63.07%) |
+| | Mimusops elengi | 7.67 (80.01%) | - |
+| Taungya | Gyrinops versteegii | 1.34 (100%) | 1.12 (68.74%) |
+| Taungya | Tectona grandis | - | 0.51 (31.25%) |
