@@ -1,70 +1,37 @@
-# Nature Conservancy PDF-to-JSON Pipeline
 
-Developed by Harvey Mudd College students in collaboration with The Nature Conservancy (TNC), this project transforms ecological research articles in PDF format into clean, machine-readable JSON. It enables downstream applications such as search, summarization, and retrieval-augmented generation (RAG).
+# The Nature Conservancy Retrieval Augmented Large Language Model (RAG-LLM) Pipeline
 
----
+  
+
+This project was a collaboration between students from Harvey Mudd College's chapter of [Code the Change](https://codethechange.cs.hmc.edu/) and scientists from The Nature Conservancy.
+
+  
+
+For more information on this project, please check out our interim slide deck presentation, which is also in this repository folder.
+
+ 
+
+If you're interested in learning more or have any questions, here are the cool people that worked on this project! (Note, the summer team worked primary on this pipeline a bit more than the spring team, so if you have any more technical questions, the summer team would be your best point of contact!)
+
+  
+<!--- This is the format for inserting your contact links
+[Name](https://www.linkaddress.com) ---->
+
+Summer team: Anika Sharma, [Elsa Li](https://www.linkedin.com/in/elsa-li-hmc/)
+
+Spring team: Tian Xie, Alicia Luo, Nicole Ge, Kimberly Silverman
+
 
 ## Repository Contents
 
-- `docling_test.py`: Uses IBM’s Docling to convert PDFs into Markdown (`.md`).
-- `mdtojson.py`: Converts Markdown to structured JSON format with section headings.
-- `json_editor.py`: Cleans Unicode artifacts and normalizes text in the JSON.
-- `json_heading_fix.ipynb`: (Notebook) Standardizes JSON structure into sections like Introduction, Methods, Results, etc.
-- `main.py`: Automates the pipeline — takes a PDF, outputs cleaned JSON in one step.
-- `example_data.zip`: Contains example inputs and outputs.
-- `Llama3.1_8B.py`: (In development) Uses LLaMA 3.1 with Ollama for local RAG on processed JSON documents.
+-  `pdf_processing`: This folder contains the code to process new PDFs that you may want to add as retrieval context. It will convert the PDF to JSON format, which is necessary to pass through our RAG pipeline
 
----
+-  `Summer_RAG`: This is the main folder you want to use for our pipeline. Detailed instructions for running the pipeline is included in the `README.md` file in this folder
 
-## Requirements
+-  `Spring_RAG`: This portion of the pipeline was built based off the Spring Code the Change's team's work. However, for best results and ease of use, please use the code and material from the Summer_RAG folder
 
-See `requirements.txt` for all dependencies, including:
-- `docling`
-- `sentence-transformers`
-- `faiss-cpu`
-- `langchain_huggingface`
-- `transformers`
-- `groq`, `langchain_community`
-- `python-dotenv`, `scikit-learn`
+  
 
-Install with:
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## Usage
-
-1. Place PDFs inside the `training_data/` directory.
-2. Run the pipeline:
-   ```bash
-   python main.py
-   ```
-   This will:
-   - Extract Markdown from PDFs using Docling.
-   - Convert `.md` to `.json`.
-   - Clean text and save final output to `finished_data/`.
-
-3. (Optional) Standardize structure using `json_heading_fix.ipynb`.
-
-4. (Optional) Run `Llama3.1_8B.py` for retrieval-based question answering on parsed documents.
-
----
-
-## Example Application
-
-- Identify whether a paper discusses agroforestry, carbon sequestration, or soil composition using LLaMA 3.1 + Ollama (see `Llama3.1_8B.py`).
-
----
-
-## General Workflow
-
-> ![Pipeline Workflow](https://github.com/user-attachments/assets/99370082-66ec-4c12-ade6-42b52101e4f0)
-
----
-
-## Acknowledgments
-
-This project is made possible by Harvey Mudd College students and faculty, in partnership with The Nature Conservancy.
+## FAQ
+**Does the pipeline use or include data from tables and figures?** - At this time, our pipeline is able to extract table information, but we're not yet utilizing data from figures. We hope to do so in the future.   
+## 
