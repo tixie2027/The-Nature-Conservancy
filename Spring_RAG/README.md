@@ -120,9 +120,6 @@ This will:
 
  
 ## Acknowledgments
-
-  
-
   
 
 This project is made possible by Harvey Mudd College and Pomona College students and faculty, in partnership with The Nature Conservancy.

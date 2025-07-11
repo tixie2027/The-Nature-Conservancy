@@ -3,7 +3,7 @@
 
   
 
-This project was a collaboration between students from Harvey Mudd College's chapter of [Code the Change](https://codethechange.cs.hmc.edu/) and scientists from The Nature Conservancy.
+This project was a collaboration between students from Harvey Mudd College's chapter of [Code the Change (CTC)](https://codethechange.cs.hmc.edu/) and scientists from The Nature Conservancy (TNC).
 
   
 
@@ -16,6 +16,9 @@ If you're interested in learning more or have any questions, here are the cool p
   
 <!--- This is the format for inserting your contact links
 [Name](https://www.linkaddress.com) ---->
+Academic Advisor: [Charlotte Chang](https://chang.eco/)
+
+TNC Liaison: [Susan Cook-Patton](https://www.nature.org/en-us/about-us/who-we-are/our-people/susan-cook-patton/) 
 
 Summer team: Anika Sharma, [Elsa Li](https://www.linkedin.com/in/elsa-li-hmc/)
 
@@ -30,8 +33,15 @@ Spring team: Tian Xie, Alicia Luo, Nicole Ge, Kimberly Silverman
 
 -  `Spring_RAG`: This portion of the pipeline was built based off the Spring Code the Change's team's work. However, for best results and ease of use, please use the code and material from the Summer_RAG folder
 
-  
+
+ ## Video Walkthrough + Set Up
+ Please check out this video for a video walkthrough of the repository, as well as set up instructions for the RAG pipeline in `Summer_RAG`
+
 
 ## FAQ
 **Does the pipeline use or include data from tables and figures?** - At this time, our pipeline is able to extract table information, but we're not yet utilizing data from figures. We hope to do so in the future.   
 ## 
+
+## Acknowledgments
+  
+This project is made possible by Harvey Mudd College and Pomona College students and faculty, in partnership with The Nature Conservancy.
