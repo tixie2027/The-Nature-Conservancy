@@ -7,7 +7,7 @@ This project was a collaboration between students from Harvey Mudd College's cha
 
   
 
-For more information on this project, please check out our interim slide deck presentation, which is also in this repository folder.
+For more information on this project, please check out our interim slide deck presentation, which is also in this repository folder. We also recorded a walkthrough of the repository, which includes instructions for setting up the Summer RAG pipeline. You can access the YouTube video [here](https://youtu.be/i9pl4bAlbj8).
 
  
 

@@ -46,7 +46,7 @@ For this code to work best, you should have a Google account with access to Goog
 
 To start, you will need to download `RAG_Pipeline.ipynb`, and upload it into Google Colab. Then you will also need to download and extract `RAG Materials.zip`, and upload it into your Google Drive. 
 
-Please follow this YouTube video for the full repositiory walk through and live set up instructions. 
+Please follow [this YouTube video](https://youtu.be/i9pl4bAlbj8) for the full repositiory walk through and live set up instructions. 
   
 
 ---
