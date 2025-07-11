@@ -1,10 +1,10 @@
 # Nature Conservancy PDF-to-JSON Pipeline
 
-Developed by Harvey Mudd College students in collaboration with The Nature Conservancy (TNC), this project transforms ecological research articles in PDF format into clean, machine-readable JSON. It enables downstream applications such as search, summarization, and retrieval-augmented generation (RAG).
+Developed by Harvey Mudd College students in collaboration with The Nature Conservancy (TNC), the code in this folder transforms ecological research articles in PDF format into clean, machine-readable JSON. It enables downstream applications such as search, summarization, and retrieval-augmented generation (RAG).
 
 ---
 
-## Repository Contents
+## Folder Contents
 
 - `docling_test.py`: Uses IBM’s Docling to convert PDFs into Markdown (`.md`).
 - `mdtojson.py`: Converts Markdown to structured JSON format with section headings.
@@ -58,11 +58,11 @@ pip install -r requirements.txt
 - Identify whether a paper discusses agroforestry, carbon sequestration, or soil composition using LLaMA 3.1 + Ollama (see `Llama3.1_8B.py`).
 
 ---
-
+<!---
 ## General Workflow
 
 > ![Pipeline Workflow](https://github.com/user-attachments/assets/99370082-66ec-4c12-ade6-42b52101e4f0)
-
+--->
 ---
 
 ## Acknowledgments

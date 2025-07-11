@@ -24,9 +24,9 @@ Spring team: Tian Xie, Alicia Luo, Nicole Ge, Kimberly Silverman
 
 ## Repository Contents
 
--  `pdf_processing`: This folder contains the code to process new PDFs that you may want to add as retrieval context. It will convert the PDF to JSON format, which is necessary to pass through our RAG pipeline
+-  `pdf_processing`: This folder contains the code to process new PDFs that you may want to add as retrieval context. It will convert the PDF to JSON format, which is necessary to pass through our RAG pipeline. This was created by the Spring team
 
--  `Summer_RAG`: This is the main folder you want to use for our pipeline. Detailed instructions for running the pipeline is included in the `README.md` file in this folder
+-  `Summer_RAG`: **This is the main folder you want to use for our pipeline**. Detailed instructions for running the pipeline is included in the `README.md` file in this folder
 
 -  `Spring_RAG`: This portion of the pipeline was built based off the Spring Code the Change's team's work. However, for best results and ease of use, please use the code and material from the Summer_RAG folder
 
