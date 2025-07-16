@@ -1,5 +1,5 @@
 
-# The Nature Conservancy Retrieval Augmented Large Language Model (RAG-LLM) Pipeline
+# The Nature Conservancy Retrieval Augmented Generation Large Language Model (RAG-LLM) Pipeline
 
   
 
@@ -7,20 +7,18 @@ This project was a collaboration between students from Harvey Mudd College's cha
 
   
 
-For more information on this project, please check out our interim slide deck presentation, which is also in this repository folder. We also recorded a walkthrough of the repository, which includes instructions for setting up the Summer RAG pipeline. You can access the YouTube video [here](https://youtu.be/i9pl4bAlbj8).
+For more information on this project, please check out our interim slide deck presentation, which is also [in the `Summer_RAG` repository folder](https://github.com/cia-group/TNC-RAG/tree/main/Summer_RAG). We also recorded a walkthrough of the repository, which includes instructions for setting up the Summer RAG pipeline. You can access the YouTube video [here](https://youtu.be/i9pl4bAlbj8). More information can also be seen at the [README](https://github.com/cia-group/TNC-RAG/blob/main/Summer_RAG/README.md) file within the `Summer_RAG` sub-folder.
 
  
 
 If you're interested in learning more or have any questions, here are the cool people that worked on this project! (Note, the summer team worked primary on this pipeline a bit more than the spring team, so if you have any more technical questions, the summer team would be your best point of contact!)
 
   
-<!--- This is the format for inserting your contact links
-[Name](https://www.linkaddress.com) ---->
 Academic Advisor: [Charlotte Chang](https://chang.eco/)
 
 TNC Liaison: [Susan Cook-Patton](https://www.nature.org/en-us/about-us/who-we-are/our-people/susan-cook-patton/) 
 
-Summer team: [Anika Sharma](www.linkedin.com/in/anika-sharma-1713a8222), [Elsa Li](https://www.linkedin.com/in/elsa-li-hmc/)
+Summer team: [Anika Sharma](https://www.linkedin.com/in/anika-sharma-1713a8222), [Elsa Li](https://www.linkedin.com/in/elsa-li-hmc/)
 
 Spring team: Tian Xie, Alicia Luo, Nicole Ge, Kimberly Silverman
 
@@ -35,12 +33,11 @@ Spring team: Tian Xie, Alicia Luo, Nicole Ge, Kimberly Silverman
 
 
  ## Video Walkthrough + Set Up
- Please check out this video for a video walkthrough of the repository, as well as set up instructions for the RAG pipeline in `Summer_RAG`
+ Please check out this video for a video walkthrough of the repository, as well as set up instructions for the RAG pipeline in the `Summer_RAG` folder
 
 
 ## FAQ
 **Does the pipeline use or include data from tables and figures?** - At this time, our pipeline is able to extract table information, but we're not yet utilizing data from figures. We hope to do so in the future.   
-## 
 
 ## Acknowledgments
   
