@@ -20,7 +20,7 @@ Academic Advisor: [Charlotte Chang](https://chang.eco/)
 
 TNC Liaison: [Susan Cook-Patton](https://www.nature.org/en-us/about-us/who-we-are/our-people/susan-cook-patton/) 
 
-Summer team: Anika Sharma, [Elsa Li](https://www.linkedin.com/in/elsa-li-hmc/)
+Summer team: [Anika Sharma](www.linkedin.com/in/anika-sharma-1713a8222), [Elsa Li](https://www.linkedin.com/in/elsa-li-hmc/)
 
 Spring team: Tian Xie, Alicia Luo, Nicole Ge, Kimberly Silverman
 
